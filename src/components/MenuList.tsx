@@ -3,104 +3,104 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 // Menu data
-const menuCategories = ['All', 'Starters', 'Main Dishes', 'Sides', 'Desserts', 'Beverages'];
+const menuCategories = ['Alle', 'Voorgerechten', 'Hoofdgerechten', 'Bijgerechten', 'Desserts', 'Dranken'];
 
 const menuItems = [
   {
     id: 1,
     name: 'Hummus',
-    description: 'Creamy chickpea dip with tahini, olive oil, and lemon juice.',
-    price: '$7.99',
-    category: 'Starters',
+    description: 'Romige kikkererwten dip met tahini, olijfolie en citroensap.',
+    price: '€7,99',
+    category: 'Voorgerechten',
     popular: true,
     image: 'https://images.unsplash.com/photo-1622542086387-907436a6e51e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 2,
     name: 'Baba Ghanoush',
-    description: 'Smoky eggplant dip with tahini, garlic, and lemon juice.',
-    price: '$8.99',
-    category: 'Starters',
+    description: 'Rokerige aubergine dip met tahini, knoflook en citroensap.',
+    price: '€8,99',
+    category: 'Voorgerechten',
     popular: false,
     image: 'https://images.unsplash.com/photo-1541592795542-3b2c63d0ebb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 3,
-    name: 'Tabbouleh',
-    description: 'Fresh parsley salad with bulgur, tomatoes, mint, and lemon dressing.',
-    price: '$8.99',
-    category: 'Starters',
+    name: 'Tabouleh',
+    description: 'Frisse peterseliesalade met bulgur, tomaten, munt en citroendressing.',
+    price: '€8,99',
+    category: 'Voorgerechten',
     popular: true,
     image: 'https://images.unsplash.com/photo-1605709239047-824038e4d49b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 4,
     name: 'Fattoush',
-    description: 'Mixed vegetable salad with toasted pita bread and sumac dressing.',
-    price: '$9.99',
-    category: 'Starters',
+    description: 'Gemengde groentesalade met geroosterd pitabrood en sumak dressing.',
+    price: '€9,99',
+    category: 'Voorgerechten',
     popular: false,
     image: 'https://images.unsplash.com/photo-1551729006-2e9ac7af8622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 5,
-    name: 'Chicken Shawarma',
-    description: 'Marinated chicken with our special blend of spices, served with garlic sauce.',
-    price: '$13.99',
-    category: 'Main Dishes',
+    name: 'Kip Shawarma',
+    description: 'Gemarineerde kip met onze speciale kruidenmix, geserveerd met knoflooksaus.',
+    price: '€13,99',
+    category: 'Hoofdgerechten',
     popular: true,
     image: 'https://images.unsplash.com/photo-1527305850-5c5f1c4068a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 6,
-    name: 'Lamb Shawarma',
-    description: 'Tender marinated lamb with our special blend of spices, served with tahini sauce.',
-    price: '$14.99',
-    category: 'Main Dishes',
+    name: 'Lam Shawarma',
+    description: 'Malse gemarineerde lam met onze speciale kruidenmix, geserveerd met tahini saus.',
+    price: '€14,99',
+    category: 'Hoofdgerechten',
     popular: true,
     image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 7,
-    name: 'Falafel Plate',
-    description: 'Crispy chickpea fritters served with tahini sauce, salad, and pickles.',
-    price: '$11.99',
-    category: 'Main Dishes',
+    name: 'Falafel Schotel',
+    description: 'Knapperige kikkererwten balletjes geserveerd met tahini saus, salade en augurken.',
+    price: '€11,99',
+    category: 'Hoofdgerechten',
     popular: false,
     image: 'https://images.unsplash.com/photo-1553030070-8c94e69d3891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 8,
-    name: 'Kibbeh Plate',
-    description: 'Bulgur shells stuffed with seasoned ground meat, pine nuts, and spices.',
-    price: '$12.99',
-    category: 'Main Dishes',
+    name: 'Kibbeh Schotel',
+    description: 'Bulgur schalen gevuld met gekruid gehakt, pijnboompitten en specerijen.',
+    price: '€12,99',
+    category: 'Hoofdgerechten',
     popular: false,
     image: 'https://images.unsplash.com/photo-1603279542617-84df654a1d84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 9,
-    name: 'Syrian Rice',
-    description: 'Aromatic rice with vermicelli noodles and our special spice blend.',
-    price: '$4.99',
-    category: 'Sides',
+    name: 'Syrische Rijst',
+    description: 'Aromatische rijst met vermicelli noedels en onze speciale kruidenmix.',
+    price: '€4,99',
+    category: 'Bijgerechten',
     popular: false,
     image: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 10,
-    name: 'Grilled Vegetables',
-    description: 'Seasonal vegetables grilled with olive oil and herbs.',
-    price: '$5.99',
-    category: 'Sides',
+    name: 'Gegrilde Groenten',
+    description: 'Seizoensgroenten gegrild met olijfolie en kruiden.',
+    price: '€5,99',
+    category: 'Bijgerechten',
     popular: false,
     image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 11,
     name: 'Baklava',
-    description: 'Layers of filo pastry filled with chopped nuts and sweetened with syrup.',
-    price: '$6.99',
+    description: 'Lagen filodeeg gevuld met gehakte noten en gezoet met siroop.',
+    price: '€6,99',
     category: 'Desserts',
     popular: true,
     image: 'https://images.unsplash.com/photo-1596149615693-decbf85a5c59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
@@ -108,38 +108,38 @@ const menuItems = [
   {
     id: 12,
     name: 'Kunafa',
-    description: 'Sweet cheese pastry soaked in sugar syrup.',
-    price: '$7.99',
+    description: 'Zoete kaasgebak gedrenkt in suikersiroop.',
+    price: '€7,99',
     category: 'Desserts',
     popular: false,
     image: 'https://images.unsplash.com/photo-1555035900-86c449fa5d2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 13,
-    name: 'Syrian Mint Tea',
-    description: 'Black tea with fresh mint leaves and sugar.',
-    price: '$3.99',
-    category: 'Beverages',
+    name: 'Syrische Muntthee',
+    description: 'Zwarte thee met verse muntblaadjes en suiker.',
+    price: '€3,99',
+    category: 'Dranken',
     popular: false,
     image: 'https://images.unsplash.com/photo-1556679343-c1c1c5b9a0e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 14,
     name: 'Jallab',
-    description: 'Sweet syrup made from dates, grapes, and rose water, topped with pine nuts.',
-    price: '$4.99',
-    category: 'Beverages',
+    description: 'Zoete siroop gemaakt van dadels, druiven en rozenwater, gegarneerd met pijnboompitten.',
+    price: '€4,99',
+    category: 'Dranken',
     popular: true,
     image: 'https://images.unsplash.com/photo-1570831739435-6601aa3fa4fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'
   }
 ];
 
 const MenuList = () => {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState('Alle');
   const [showPopular, setShowPopular] = useState(false);
 
   const filteredItems = menuItems.filter(item => {
-    const categoryMatch = activeCategory === 'All' || item.category === activeCategory;
+    const categoryMatch = activeCategory === 'Alle' || item.category === activeCategory;
     const popularMatch = showPopular ? item.popular : true;
     return categoryMatch && popularMatch;
   });
@@ -179,7 +179,7 @@ const MenuList = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
               )}
             </span>
-            Popular Items Only
+            Alleen Populaire Items
           </button>
         </div>
       </div>
@@ -203,20 +203,20 @@ const MenuList = () => {
                 {item.popular && (
                   <div className="mb-2">
                     <span className="inline-block bg-saffron-100 text-saffron-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-                      Popular
+                      Populair
                     </span>
                   </div>
                 )}
                 <p className="text-sm text-gray-600">{item.description}</p>
                 <Button className="mt-3 bg-spice-600 hover:bg-spice-700 text-sm px-3 py-1 h-auto" size="sm">
-                  Add to Order
+                  Toevoegen aan Bestelling
                 </Button>
               </div>
             </div>
           ))
         ) : (
           <div className="col-span-full text-center py-10">
-            <p className="text-gray-500">No items found. Try another category.</p>
+            <p className="text-gray-500">Geen items gevonden. Probeer een andere categorie.</p>
           </div>
         )}
       </div>

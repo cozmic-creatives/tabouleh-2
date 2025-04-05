@@ -5,27 +5,27 @@ import { Link } from 'react-router-dom';
 const featuredDishes = [
   {
     id: 1,
-    name: 'Lamb Shawarma',
-    description: 'Tender marinated lamb with our special blend of spices, served with tahini sauce.',
-    price: '$14.99',
+    name: 'Lamsshawarma',
+    description: 'Malse gemarineerde lam met onze speciale kruidenmix, geserveerd met tahini saus.',
+    price: '€14,99',
     image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    category: 'Main'
+    category: 'Hoofdgerecht'
   },
   {
     id: 2,
-    name: 'Stuffed Vine Leaves',
-    description: 'Vine leaves stuffed with rice, vegetables, and aromatic herbs in a lemon sauce.',
-    price: '$10.99',
+    name: 'Gevulde Druivenbladeren',
+    description: 'Druivenbladeren gevuld met rijst, groenten en aromatische kruiden in een citroensaus.',
+    price: '€10,99',
     image: 'https://images.unsplash.com/photo-1601050591250-cb3d01d35c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    category: 'Starter'
+    category: 'Voorgerecht'
   },
   {
     id: 3,
     name: 'Kibbeh',
-    description: 'Crispy shell of bulgur wheat filled with seasoned ground meat, pine nuts, and spices.',
-    price: '$12.99',
+    description: 'Knapperige schil van bulgur tarwe gevuld met gekruid gehakt, pijnboompitten en specerijen.',
+    price: '€12,99',
     image: 'https://images.unsplash.com/photo-1603279542617-84df654a1d84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    category: 'Starter'
+    category: 'Voorgerecht'
   }
 ];
 
@@ -34,9 +34,9 @@ const FeaturedDishes = () => {
     <section className="section-padding bg-white">
       <div className="container-custom mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Signature Dishes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Onze Signatuurgerechten</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our most popular authentic Syrian dishes, crafted with love and traditional recipes.
+            Ontdek onze meest populaire authentieke Syrische gerechten, bereid met liefde en traditionele recepten.
           </p>
         </div>
         
@@ -65,7 +65,7 @@ const FeaturedDishes = () => {
                   to="/menu" 
                   className="text-spice-600 hover:text-spice-700 font-medium inline-flex items-center"
                 >
-                  Order now
+                  Nu bestellen
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </Link>
               </div>
@@ -78,7 +78,7 @@ const FeaturedDishes = () => {
             to="/menu" 
             className="inline-flex items-center text-spice-600 hover:text-spice-700 font-medium text-lg"
           >
-            View Full Menu
+            Volledig Menu Bekijken
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
           </Link>
         </div>

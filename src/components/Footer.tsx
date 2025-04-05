@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-lg font-serif ml-2 text-olive-600">Takeaway</span>
             </div>
             <p className="text-gray-600 mb-4">
-              Authentic Syrian cuisine made with fresh ingredients and traditional recipes.
+              Authentieke Syrische keuken gemaakt met verse ingrediënten en traditionele recepten.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-spice-600 transition-colors">
@@ -28,27 +28,27 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-serif font-bold mb-4 text-gray-800">Opening Hours</h3>
+            <h3 className="text-lg font-serif font-bold mb-4 text-gray-800">Openingstijden</h3>
             <div className="flex items-start space-x-2 mb-2">
               <Clock size={18} className="mt-1 text-spice-500" />
               <div>
-                <p className="text-gray-800 font-medium">Monday - Friday</p>
-                <p className="text-gray-600">11:00 AM - 10:00 PM</p>
+                <p className="text-gray-800 font-medium">Maandag - Vrijdag</p>
+                <p className="text-gray-600">11:00 - 22:00</p>
               </div>
             </div>
             <div className="flex items-start space-x-2">
               <Clock size={18} className="mt-1 text-spice-500" />
               <div>
-                <p className="text-gray-800 font-medium">Saturday - Sunday</p>
-                <p className="text-gray-600">12:00 PM - 11:00 PM</p>
+                <p className="text-gray-800 font-medium">Zaterdag - Zondag</p>
+                <p className="text-gray-600">12:00 - 23:00</p>
               </div>
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-serif font-bold mb-4 text-gray-800">Contact Us</h3>
+            <h3 className="text-lg font-serif font-bold mb-4 text-gray-800">Neem Contact Op</h3>
             <div className="flex items-start space-x-2 mb-2">
               <MapPin size={18} className="mt-1 text-spice-500" />
-              <p className="text-gray-600">123 Syrian Street, Foodtown, FT 12345</p>
+              <p className="text-gray-600">123 Syrische Straat, Eetstad, ES 12345</p>
             </div>
             <div className="flex items-start space-x-2 mb-2">
               <Phone size={18} className="mt-1 text-spice-500" />
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-clay-200 mt-8 pt-6 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Damascene Takeaway. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Damascene Takeaway. Alle rechten voorbehouden.</p>
         </div>
       </div>
     </footer>

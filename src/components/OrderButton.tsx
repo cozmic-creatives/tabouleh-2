@@ -10,7 +10,7 @@ interface OrderButtonProps {
   icon?: boolean;
 }
 
-const OrderButton = ({ text = "Order Now", className = "", icon = true }: OrderButtonProps) => {
+const OrderButton = ({ text = "Nu Bestellen", className = "", icon = true }: OrderButtonProps) => {
   return (
     <Button asChild className={`bg-spice-600 hover:bg-spice-700 ${className}`}>
       <Link to="/contact" className="flex items-center">

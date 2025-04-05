@@ -31,7 +31,7 @@ const Navbar = () => {
             Contact
           </Link>
           <Button asChild className="bg-spice-600 hover:bg-spice-700">
-            <Link to="/contact">Order Now</Link>
+            <Link to="/contact">Nu Bestellen</Link>
           </Button>
         </nav>
         
@@ -61,7 +61,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Button asChild className="bg-spice-600 hover:bg-spice-700 w-full mt-4">
-              <Link to="/contact" onClick={toggleMenu}>Order Now</Link>
+              <Link to="/contact" onClick={toggleMenu}>Nu Bestellen</Link>
             </Button>
           </nav>
         </div>
