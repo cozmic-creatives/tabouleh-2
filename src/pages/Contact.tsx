@@ -3,7 +3,9 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { MapPin, Phone, Mail, Clock, Utensils } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Utensils, Star } from 'lucide-react';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Contact = () => {
   return (
@@ -69,7 +71,9 @@ const Contact = () => {
                       <Clock className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Openingstijden</h4>
-                        <p className="text-gray-600">Woensdag - Maandag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Woensdag - Vrijdag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Zaterdag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Zondag - Maandag: 14:00 - 22:00</p>
                         <p className="text-gray-600">Dinsdag: Gesloten</p>
                       </div>
                     </div>
@@ -161,6 +165,107 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-12 bg-clay-50">
+          <div className="container-custom mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Wat Onze Klanten Zeggen</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Review 1 */}
+              <Card className="h-full">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarFallback className="bg-spice-100 text-spice-600">HK</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-medium">Hassan Khaled</p>
+                      <div className="flex text-amber-500">
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">Top lekker etentje ik heb juist gepakt tashrip was top lekker</p>
+                  <p className="text-gray-400 text-sm mt-3">Een week geleden</p>
+                </CardContent>
+              </Card>
+
+              {/* Review 2 */}
+              <Card className="h-full">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarFallback className="bg-spice-100 text-spice-600">AA</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-medium">Aboudi Alfadhil</p>
+                      <div className="flex text-amber-500">
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">Het was heerlijk, de service top en de medewerkers super vriendelijk. Ik kom zonder twijfel terug!</p>
+                  <p className="text-gray-400 text-sm mt-3">Een week geleden</p>
+                </CardContent>
+              </Card>
+
+              {/* Review 3 */}
+              <Card className="h-full">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarFallback className="bg-spice-100 text-spice-600">OA</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-medium">Omer Aljbory</p>
+                      <div className="flex text-amber-500">
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">Very tasty and good service thanks alot 🌹</p>
+                  <p className="text-gray-400 text-sm mt-3">Een week geleden</p>
+                </CardContent>
+              </Card>
+
+              {/* Review 4 */}
+              <Card className="h-full">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarFallback className="bg-spice-100 text-spice-600">AR</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-medium">Ahmed Rzgar</p>
+                      <div className="flex text-amber-500">
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                        <Star className="h-4 w-4 fill-current" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">Very delicious, Thanks!</p>
+                  <p className="text-gray-400 text-sm mt-3">Een week geleden</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
