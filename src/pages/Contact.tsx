@@ -35,7 +35,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Per Telefoon</h4>
-                        <p className="text-gray-600">Bel ons op (123) 456-7890 om uw bestelling te plaatsen.</p>
+                        <p className="text-gray-600">Bel ons op +32496210697 om uw bestelling te plaatsen.</p>
                       </div>
                     </div>
                     
@@ -69,8 +69,8 @@ const Contact = () => {
                       <Clock className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Openingstijden</h4>
-                        <p className="text-gray-600">Maandag - Vrijdag: 11:00 - 22:00</p>
-                        <p className="text-gray-600">Zaterdag - Zondag: 12:00 - 23:00</p>
+                        <p className="text-gray-600">Woensdag - Maandag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Dinsdag: Gesloten</p>
                       </div>
                     </div>
                     
@@ -78,8 +78,8 @@ const Contact = () => {
                       <MapPin className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Adres</h4>
-                        <p className="text-gray-600">123 Syrische Straat</p>
-                        <p className="text-gray-600">Eetstad, ES 12345</p>
+                        <p className="text-gray-600">Ledebergplein 17</p>
+                        <p className="text-gray-600">9050 Gent</p>
                       </div>
                     </div>
                     
@@ -87,7 +87,7 @@ const Contact = () => {
                       <Mail className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">E-mail</h4>
-                        <p className="text-gray-600">info@damascenetakeaway.com</p>
+                        <p className="text-gray-600">info@tabouleh2.be</p>
                       </div>
                     </div>
                   </div>
@@ -170,7 +170,7 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Bezoek Ons</h2>
             <div className="rounded-lg overflow-hidden shadow-md h-80">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.9528850999397!2d-74.00597492449866!3d40.71277583748678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Manhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1692810264384!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.1599595358507!2d3.743396776992651!3d51.03905534750757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371451f8773c1%3A0x5a31aeefa4dccf27!2sLedebergplein%2017%2C%209050%20Gent!5e0!3m2!1sen!2sbe!4v1712325693546!5m2!1sen!2sbe" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

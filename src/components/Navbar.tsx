@@ -15,8 +15,8 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-clay-200">
       <div className="container-custom mx-auto flex items-center justify-between h-16">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-serif font-bold text-spice-600">Damascene</span>
-          <span className="text-lg font-serif ml-2 text-olive-600">Takeaway</span>
+          <span className="text-2xl font-serif font-bold text-spice-600">TABOULEH 2</span>
+          <span className="text-lg font-serif ml-2 text-olive-600">مطعم تبوله</span>
         </Link>
         
         {/* Desktop Navigation */}

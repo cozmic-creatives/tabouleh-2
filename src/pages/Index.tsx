@@ -20,10 +20,13 @@ const Index = () => {
           <div className="container-custom mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Klaar om te Bestellen?</h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
-              Bevredig je verlangen naar authentieke Syrische keuken. 
-              Bestel nu voor afhalen of bezorging!
+              Geniet van authentieke Syrische keuken bij TABOULEH 2.
+              Beschikbaar voor afhalen, bezorging, of dineer ter plaatse!
             </p>
-            <OrderButton className="bg-white hover:bg-gray-100 text-spice-600" text="Plaats je Bestelling" />
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <OrderButton className="bg-white hover:bg-gray-100 text-spice-600" text="Plaats je Bestelling" />
+              <div className="text-white font-bold">of bel +32496210697</div>
+            </div>
           </div>
         </section>
       </main>

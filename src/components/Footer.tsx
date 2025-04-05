@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-4">
-              <span className="text-xl font-serif font-bold text-spice-600">Damascene</span>
-              <span className="text-lg font-serif ml-2 text-olive-600">Takeaway</span>
+              <span className="text-xl font-serif font-bold text-spice-600">TABOULEH 2</span>
+              <span className="text-lg font-serif ml-2 text-olive-600">مطعم تبوله</span>
             </div>
             <p className="text-gray-600 mb-4">
               Authentieke Syrische keuken gemaakt met verse ingrediënten en traditionele recepten.
@@ -32,15 +32,15 @@ const Footer = () => {
             <div className="flex items-start space-x-2 mb-2">
               <Clock size={18} className="mt-1 text-spice-500" />
               <div>
-                <p className="text-gray-800 font-medium">Maandag - Vrijdag</p>
-                <p className="text-gray-600">11:00 - 22:00</p>
+                <p className="text-gray-800 font-medium">Woensdag - Maandag</p>
+                <p className="text-gray-600">14:00 - 22:00</p>
               </div>
             </div>
             <div className="flex items-start space-x-2">
               <Clock size={18} className="mt-1 text-spice-500" />
               <div>
-                <p className="text-gray-800 font-medium">Zaterdag - Zondag</p>
-                <p className="text-gray-600">12:00 - 23:00</p>
+                <p className="text-gray-800 font-medium">Dinsdag</p>
+                <p className="text-gray-600">Gesloten</p>
               </div>
             </div>
           </div>
@@ -48,20 +48,20 @@ const Footer = () => {
             <h3 className="text-lg font-serif font-bold mb-4 text-gray-800">Neem Contact Op</h3>
             <div className="flex items-start space-x-2 mb-2">
               <MapPin size={18} className="mt-1 text-spice-500" />
-              <p className="text-gray-600">123 Syrische Straat, Eetstad, ES 12345</p>
+              <p className="text-gray-600">Ledebergplein 17, 9050 Gent</p>
             </div>
             <div className="flex items-start space-x-2 mb-2">
               <Phone size={18} className="mt-1 text-spice-500" />
-              <p className="text-gray-600">(123) 456-7890</p>
+              <p className="text-gray-600">+32496210697</p>
             </div>
             <div className="flex items-start space-x-2">
               <Mail size={18} className="mt-1 text-spice-500" />
-              <p className="text-gray-600">info@damascenetakeaway.com</p>
+              <p className="text-gray-600">info@tabouleh2.be</p>
             </div>
           </div>
         </div>
         <div className="border-t border-clay-200 mt-8 pt-6 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Damascene Takeaway. Alle rechten voorbehouden.</p>
+          <p>© {new Date().getFullYear()} TABOULEH 2 مطعم تبوله. Alle rechten voorbehouden.</p>
         </div>
       </div>
     </footer>
