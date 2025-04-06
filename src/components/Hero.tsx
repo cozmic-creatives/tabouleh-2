@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -39,10 +40,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-saffron-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
               
-              
-              {/* Decorative elements */}
-              <div className="absolute -right-4 -top-4 w-16 h-16 border-r-4 border-t-4 border-saffron-500 opacity-60"></div>
-              <div className="absolute -left-4 -bottom-4 w-16 h-16 border-l-4 border-b-4 border-henna-500 opacity-60"></div>
+              {/* Removed decorative corner elements */}
               
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
               <img alt="Syrisch Eten" className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full" src="https://images.unsplash.com/photo-1582507421104-37836a21da35?q=80&w=2336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
