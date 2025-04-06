@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import FeaturedDishes from '@/components/FeaturedDishes';
-import AtmosphereGallery from '@/components/AtmosphereGallery';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import OrderButton from '@/components/OrderButton';
@@ -15,7 +14,6 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <FeaturedDishes />
-        <AtmosphereGallery />
         <AboutSection />
         
         <section className="py-16 bg-spice-600 text-white text-center">

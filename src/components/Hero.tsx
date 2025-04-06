@@ -7,16 +7,6 @@ const Hero = () => {
   return (
     <div className="relative bg-clay-50 overflow-hidden decorative-border">
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
-      
-      {/* Adding decorative Middle Eastern background elements */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-5">
-        <img 
-          src="https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-          alt="Background Texture" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
       <div className="container-custom mx-auto relative">
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24">
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">
