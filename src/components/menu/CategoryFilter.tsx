@@ -13,11 +13,11 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   setActiveCategory 
 }) => {
   return (
-    <div className="flex overflow-x-auto pb-2 md:pb-0 -mx-2 md:-mx-0 scrollbar-none">
+    <div className="flex flex-wrap gap-2">
       {categories.map((category) => (
         <button
           key={category}
-          className={`px-4 py-2 mx-2 md:mx-1 text-sm rounded-full transition-colors whitespace-nowrap ${
+          className={`px-4 py-2 text-sm rounded-full transition-colors ${
             activeCategory === category 
               ? 'bg-spice-600 text-white'
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
