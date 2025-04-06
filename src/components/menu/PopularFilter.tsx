@@ -9,12 +9,12 @@ interface PopularFilterProps {
 const PopularFilter: React.FC<PopularFilterProps> = ({ showPopular, setShowPopular }) => {
   return (
     <button
-      className={`flex items-center text-sm font-medium ${
+      className={`flex items-center text-sm font-medium py-2 ${
         showPopular ? 'text-spice-600' : 'text-gray-500'
       }`}
       onClick={() => setShowPopular(!showPopular)}
     >
-      <span className={`w-4 h-4 mr-2 rounded-sm border flex items-center justify-center ${
+      <span className={`w-5 h-5 mr-3 rounded-sm border flex items-center justify-center ${
         showPopular 
           ? 'bg-spice-600 border-spice-600' 
           : 'border-gray-300'

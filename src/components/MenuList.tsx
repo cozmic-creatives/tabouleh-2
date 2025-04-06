@@ -17,14 +17,14 @@ const MenuList = () => {
 
   return (
     <div className="container-custom mx-auto py-8">
-      <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+      <div className="flex flex-col gap-6">
         <CategoryFilter 
           categories={menuCategories}
           activeCategory={activeCategory}
           setActiveCategory={setActiveCategory}
         />
         
-        <div className="flex items-center">
+        <div>
           <PopularFilter 
             showPopular={showPopular}
             setShowPopular={setShowPopular}
@@ -32,7 +32,9 @@ const MenuList = () => {
         </div>
       </div>
       
-      <MenuGrid items={filteredItems} />
+      <div className="mt-8">
+        <MenuGrid items={filteredItems} />
+      </div>
     </div>
   );
 };
