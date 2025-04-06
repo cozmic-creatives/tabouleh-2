@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  return (
-    <div className="relative bg-clay-50 overflow-hidden decorative-border">
+  return <div className="relative bg-clay-50 overflow-hidden decorative-border">
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
       <div className="container-custom mx-auto relative">
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24">
@@ -48,11 +45,7 @@ const Hero = () => {
               <div className="absolute -left-4 -bottom-4 w-16 h-16 border-l-4 border-b-4 border-henna-500 opacity-60"></div>
               
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                alt="Hummus met brood" 
-                className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full"
-              />
+              <img alt="Syrisch Eten" className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full" src="https://images.unsplash.com/photo-1582507421104-37836a21da35?q=80&w=2336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
           </div>
         </div>
@@ -60,8 +53,6 @@ const Hero = () => {
       
       {/* Decorative bottom border */}
       <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-spice-500 via-saffron-500 to-henna-500 opacity-80"></div>
-    </div>
-  );
+    </div>;
 };
-
 export default Hero;
