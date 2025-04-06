@@ -67,18 +67,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Syrian restaurant theme
+				// Custom colors for Syrian restaurant theme with enhanced Middle Eastern vibes
 				'spice': {
-					50: '#FDF8F3',
-					100: '#F9EBE0',
-					200: '#F2D5BD',
-					300: '#EBBD97',
-					400: '#E3A571',
-					500: '#D9874B', // Cinnamon/spice main
-					600: '#C26A34',
-					700: '#A1522A',
-					800: '#804123',
-					900: '#66341D',
+					50: '#FDF5EF',
+					100: '#FAEAD9',
+					200: '#F5D0B3',
+					300: '#EFB78D',
+					400: '#E99D67',
+					500: '#E38341', // Enhanced cinnamon/spice main - more vibrant
+					600: '#C96830',
+					700: '#A85227',
+					800: '#86411F',
+					900: '#6D3519',
 				},
 				'olive': {
 					50: '#F7F9F3',
@@ -98,7 +98,7 @@ export default {
 					200: '#FFF5BF',
 					300: '#FFEE99',
 					400: '#FFE670',
-					500: '#FFDC3F', // Saffron main
+					500: '#FFDC3F', // Saffron main - brighter
 					600: '#F7CA00',
 					700: '#C5A100',
 					800: '#937A00',
@@ -116,10 +116,35 @@ export default {
 					800: '#70624C',
 					900: '#5C503F',
 				},
+				'turquoise': {
+					50: '#F0FDFA',
+					100: '#CCFBF1',
+					200: '#99F6E4',
+					300: '#5EEAD4',
+					400: '#2DD4BF',
+					500: '#14B8A6', // Turquoise main (new)
+					600: '#0D9488',
+					700: '#0F766E',
+					800: '#115E59',
+					900: '#134E4A',
+				},
+				'henna': {
+					50: '#FFF1F0',
+					100: '#FFE2DF',
+					200: '#FFC5BF',
+					300: '#FFA49E',
+					400: '#FF7A71',
+					500: '#FF5449', // Henna red (new)
+					600: '#ED3C32',
+					700: '#C52A22',
+					800: '#9E211B',
+					900: '#7E1D18',
+				},
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
 				'serif': ['Playfair Display', 'serif'],
+				'arabic': ['Scheherazade New', 'serif'], // Adding Arabic font
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -150,15 +175,26 @@ export default {
 					'100%': {
 						opacity: '1'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-out'
+				'fade-in': 'fade-in 0.5s ease-out',
+				'float': 'float 3s ease-in-out infinite'
 			},
 			backgroundImage: {
 				'pattern': "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNTB2NTBIMHoiLz48cGF0aCBkPSJNNTAgMjVjMCAxMy44MDctMTEuMTkzIDI1LTI1IDI1UzAgMzguODA3IDAgMjUgMTEuMTkzIDAgMjUgMHMyNSAxMS4xOTMgMjUgMjV6IiBzdHJva2U9IiNCQUE4OEMiIHN0cm9rZS1vcGFjaXR5PSIuMDUiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMzAgMjVjMCAyLjc2MS0yLjIzOSA1LTUgNXMtNS0yLjIzOS01LTUgMi4yMzktNSA1LTUgNSAyLjIzOSA1IDV6IiBzdHJva2U9IiNCQUE4OEMiIHN0cm9rZS1vcGFjaXR5PSIuMDUiIHN0cm9rZS13aWR0aD0iLjUiLz48L2c+PC9zdmc+')",
+				'pattern-arabic': "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNTB2NTBIMHoiLz48cGF0aCBkPSJNMjUgNDNjMS42NTcgMCAzLTEuMzQzIDMtM3MtMS4zNDMtMy0zLTMtMyAxLjM0My0zIDMgMS4zNDMgMyAzIDN6bTAgMmMtMi43NjEgMC01LTIuMjM5LTUtNXMyLjIzOS01IDUtNSA1IDIuMjM5IDUgNS0yLjIzOSA1LTUgNXptMC0yOGMxLjY1NyAwIDMtMS4zNDMgMy0zcy0xLjM0My0zLTMtMy0zIDEuMzQzLTMgMyAxLjM0MyAzIDMgM3ptMCAyYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzktNSA1LTIuMjM5IDUtNSA1em0tMSAxMHYtMTJoMnYxMmgtMnptLTkgOGMxLjY1NyAwIDMtMS4zNDMgMy0zcy0xLjM0My0zLTMtMy0zIDEuMzQzLTMgMyAxLjM0MyAzIDMgM3ptMCAyYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzktNSA1LTIuMjM5IDUtNSA1em0yMC0yYzEuNjU3IDAgMy0xLjM0MyAzLTNzLTEuMzQzLTMtMy0zLTMgMS4zNDMtMyAzIDEuMzQzIDMgMyAzem0wIDJjLTIuNzYxIDAtNS0yLjIzOS01LTVzMi4yMzktNSA1LTUgNSAyLjIzOSA1IDUtMi4yMzktNS01IDV6TTggMjR2LTJoMzR2MkgzNHptLTMgMTBsNi02IDYgNkgzbDYtNnoiIGZpbGw9IiNCQUE4OEMiIGZpbGwtb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')",
+				'pattern-geometric': "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBMMTUgNTJoMzBMMzAgMzB6TTMwIDMwTDE1IDhsMTUgMjJ6TTMwIDMwbDE1LTIyLTE1IDIyek0zMCAzMGwxNSAyMkgxNWwxNS0yMnoiIHN0cm9rZT0iI0JBQTg4QyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')",
 			}
 		}
 	},

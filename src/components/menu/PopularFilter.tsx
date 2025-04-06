@@ -9,21 +9,26 @@ interface PopularFilterProps {
 const PopularFilter: React.FC<PopularFilterProps> = ({ showPopular, setShowPopular }) => {
   return (
     <button
-      className={`flex items-center text-sm font-medium py-2 ${
-        showPopular ? 'text-spice-600' : 'text-gray-500'
+      className={`flex items-center text-sm font-medium py-3 ${
+        showPopular ? 'text-henna-600' : 'text-gray-500'
       }`}
       onClick={() => setShowPopular(!showPopular)}
     >
-      <span className={`w-5 h-5 mr-3 rounded-sm border flex items-center justify-center ${
+      <span className={`w-5 h-5 mr-3 rounded-md border flex items-center justify-center ${
         showPopular 
-          ? 'bg-spice-600 border-spice-600' 
-          : 'border-gray-300'
+          ? 'bg-henna-500 border-henna-600' 
+          : 'border-clay-300'
       }`}>
         {showPopular && (
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
         )}
       </span>
-      Alleen Populaire Items
+      <span className="relative">
+        Alleen Populaire Items
+        {showPopular && (
+          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-henna-500 to-spice-500"></span>
+        )}
+      </span>
     </button>
   );
 };
