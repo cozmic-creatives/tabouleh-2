@@ -5,27 +5,27 @@ import { Link } from 'react-router-dom';
 const featuredDishes = [
   {
     id: 1,
-    name: 'Lamsshawarma',
-    description: 'Malse gemarineerde lam met onze speciale kruidenmix, geserveerd met tahini saus.',
-    price: '€14,99',
-    image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    category: 'Hoofdgerecht'
+    name: 'Mix Grilled',
+    description: 'Lam brochette, gehakt, kipfilet (met rijst, bulgur met tomatensaus of friet).',
+    price: '€18,00',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    category: 'BBQ Gerecht'
   },
   {
     id: 2,
-    name: 'Gevulde Druivenbladeren',
-    description: 'Druivenbladeren gevuld met rijst, groenten en aromatische kruiden in een citroensaus.',
-    price: '€10,99',
-    image: 'https://images.unsplash.com/photo-1601050591250-cb3d01d35c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    category: 'Voorgerecht'
+    name: 'Tabouleh',
+    description: 'Gehakte peterselie, tomaten, munt, met uien, bulgur.',
+    price: '€7,50',
+    image: 'https://images.unsplash.com/photo-1605709239047-824038e4d49b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    category: 'Mezze'
   },
   {
     id: 3,
-    name: 'Kibbeh',
-    description: 'Knapperige schil van bulgur tarwe gevuld met gekruid gehakt, pijnboompitten en specerijen.',
-    price: '€12,99',
-    image: 'https://images.unsplash.com/photo-1603279542617-84df654a1d84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    category: 'Voorgerecht'
+    name: 'Quzi',
+    description: 'Lamspotje met rijst en 3 soepen (okra met tomatensaus, bonen met tomatensaus, aubergine met tomatensaus).',
+    price: '€18,00',
+    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    category: 'Hoofdgerecht'
   }
 ];
 

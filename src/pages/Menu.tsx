@@ -3,6 +3,8 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import MenuList from '@/components/MenuList';
+import { Card, CardContent } from '@/components/ui/card';
+import { Utensils, Clock, MapPin } from 'lucide-react';
 
 const Menu = () => {
   return (
@@ -76,9 +78,41 @@ const Menu = () => {
                   <p className="font-medium">Saladebar</p>
                 </div>
               </div>
-              <div className="mt-6 text-center text-gray-600">
-                <p>Gezellige en vriendelijke familiesfeer in ons restaurant</p>
-                <p className="mt-2">Parkeergelegenheid ter plaatse beschikbaar</p>
+              <div className="mt-8">
+                <Card className="bg-gray-50 border-clay-100">
+                  <CardContent className="pt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="flex items-start space-x-4">
+                        <Clock className="text-spice-600 mt-1 flex-shrink-0" size={20} />
+                        <div>
+                          <h4 className="font-semibold text-gray-900">Openingstijden</h4>
+                          <ul className="text-sm text-gray-600 mt-1 space-y-1">
+                            <li>Maandag: 14:00 - 22:00</li>
+                            <li>Dinsdag: Gesloten</li>
+                            <li>Woensdag: 14:00 - 22:00</li>
+                            <li>Donderdag: 14:00 - 22:00</li>
+                            <li>Vrijdag: 14:00 - 22:00</li>
+                            <li>Zaterdag: 14:00 - 22:00</li>
+                            <li>Zondag: 14:00 - 22:00</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-4">
+                        <MapPin className="text-spice-600 mt-1 flex-shrink-0" size={20} />
+                        <div>
+                          <h4 className="font-semibold text-gray-900">Locatie & Sfeer</h4>
+                          <p className="text-sm text-gray-600 mt-1">Ledebergplein 17, 9050 Gent</p>
+                          <ul className="text-sm text-gray-600 mt-3 space-y-1">
+                            <li>Gezellige en vriendelijke familiesfeer</li>
+                            <li>Casual en comfortabele omgeving</li>
+                            <li>Parkeergelegenheid ter plaatse beschikbaar</li>
+                            <li>Toilet beschikbaar</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
