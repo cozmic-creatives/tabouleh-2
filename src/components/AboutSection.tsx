@@ -1,19 +1,12 @@
-
 import React from 'react';
-
 const AboutSection = () => {
-  return (
-    <section className="section-padding bg-clay-50">
+  return <section className="section-padding bg-clay-50">
       <div className="container-custom mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2 order-2 lg:order-1">
             <div className="relative">
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform -rotate-3 z-0"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1514516816566-de580c621376?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                alt="Onze Syrische Keuken" 
-                className="relative rounded-2xl shadow-lg z-10 transform rotate-2 w-full"
-              />
+              <img alt="Onze Syrische Keuken" className="relative rounded-2xl shadow-lg z-10 transform rotate-2 w-full" src="https://plus.unsplash.com/premium_photo-1674106347866-8282d8c19f84?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
           </div>
           
@@ -48,8 +41,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
