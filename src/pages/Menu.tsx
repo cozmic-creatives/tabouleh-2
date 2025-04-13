@@ -5,10 +5,44 @@ import Footer from '@/components/Footer';
 import MenuList from '@/components/MenuList';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Clock, MapPin } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const Menu = () => {
+  // Schema markup specific to the menu page
+  const menuSchema = {
+    '@type': 'Restaurant',
+    hasMenu: {
+      '@type': 'Menu',
+      name: 'TABOULEH 2 Menu',
+      description: 'Authentieke Syrische gerechten',
+      hasMenuSection: [
+        {
+          '@type': 'MenuSection',
+          name: 'Voorgerechten',
+          description: 'Traditionele Syrische voorgerechten'
+        },
+        {
+          '@type': 'MenuSection',
+          name: 'Hoofdgerechten',
+          description: 'Syrische hoofdgerechten en specialiteiten'
+        },
+        {
+          '@type': 'MenuSection',
+          name: 'Desserts',
+          description: 'Zoete Syrische desserts'
+        }
+      ]
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Ons Menu - Syrische Gerechten en Specialiteiten"
+        description="Ontdek onze authentieke Syrische gerechten, gemaakt met traditionele recepten en de verste ingrediënten. Van voorgerechten tot desserts, ons menu biedt voor ieder wat wils."
+        type="website"
+        schemaMarkup={menuSchema}
+      />
       <Navbar />
       <main className="flex-grow">
         <section className="bg-clay-50 py-12">

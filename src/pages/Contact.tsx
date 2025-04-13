@@ -6,10 +6,33 @@ import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Clock, Utensils, Star } from 'lucide-react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
+import SEO from '@/components/SEO';
 
 const Contact = () => {
+  // Schema markup specific to the contact page
+  const contactSchema = {
+    '@type': 'Restaurant',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+32496210697',
+      contactType: 'customer service',
+      availableLanguage: ['Dutch', 'English', 'Arabic']
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '51.039054',
+      longitude: '3.745584'
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Contact & Bestellen - Neem contact op met TABOULEH 2"
+        description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten."
+        type="website"
+        schemaMarkup={contactSchema}
+      />
       <Navbar />
       <main className="flex-grow">
         <section className="bg-clay-50 py-12">

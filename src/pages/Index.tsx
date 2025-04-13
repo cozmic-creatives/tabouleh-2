@@ -6,10 +6,28 @@ import FeaturedDishes from '@/components/FeaturedDishes';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import OrderButton from '@/components/OrderButton';
+import SEO from '@/components/SEO';
 
 const Index = () => {
+  // Schema markup specific to the homepage
+  const homeSchema = {
+    '@type': 'Restaurant',
+    specialties: ['Syrische keuken', 'Halal gerechten', 'Midden-Oosterse specialiteiten'],
+    hasMenu: {
+      '@type': 'Menu',
+      name: 'TABOULEH 2 Menu',
+      description: 'Authentieke Syrische gerechten',
+      url: 'https://tabouleh2.be/menu'
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Authentieke Syrische Keuken in Gent"
+        description="Geniet van de rijke smaken van Damascus met onze authentieke familierecepten, dagelijks vers bereid met traditionele kruiden en technieken. Bestel online, afhalen of dineer ter plaatse!"
+        schemaMarkup={homeSchema}
+      />
       <Navbar />
       <main className="flex-grow">
         <Hero />
