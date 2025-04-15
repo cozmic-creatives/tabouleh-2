@@ -1,9 +1,12 @@
+
 import React from 'react';
 import { MenuItem as MenuItemType } from '@/data/menuData';
 import { Badge } from '@/components/ui/badge';
+
 interface MenuItemProps {
   item: MenuItemType;
 }
+
 const MenuItem: React.FC<MenuItemProps> = ({
   item
 }) => {
@@ -36,8 +39,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
           {item.popular && <Badge variant="secondary" className="bg-saffron-100 border text-saffron-800 hover:bg-saffron-200 border-saffron-500">
               Populair
             </Badge>}
-          {item.serves && <Badge variant="outline" className="bg-spice-50 text-spice-800 border-spice-200">
-              Serveert {item.serves} {item.serves === 1 ? 'persoon' : 'personen'}
+          {item.serves && item.serves !== "1" && item.serves !== 1 && <Badge variant="outline" className="bg-spice-50 text-spice-800 border-spice-200">
+              {item.serves} personen
             </Badge>}
         </div>
         <div className="grow" />
@@ -45,4 +48,5 @@ const MenuItem: React.FC<MenuItemProps> = ({
       </div>
     </div>;
 };
+
 export default MenuItem;

@@ -11,7 +11,7 @@ export interface MenuItem {
   category: string;
   popular: boolean;
   image: string;
-  serves?: number; // Optional property to indicate how many people the dish serves
+  serves?: string | number; // Changed to string or number to support approximate values
 }
 
 // Menu items data
@@ -496,7 +496,7 @@ export const menuItems: MenuItem[] = [
     category: 'Menu Combinaties',
     popular: true,
     image: 'https://images.unsplash.com/photo-1622542086387-907436a6e51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    serves: 5
+    serves: "4-5"
   },
   {
     id: 53,
