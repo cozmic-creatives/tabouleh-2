@@ -35,7 +35,7 @@ const FeaturedDishes = () => {
               <div className="h-48 overflow-hidden">
                 <img src={dish.image} alt={dish.name} className="w-full h-full object-cover transition-transform hover:scale-105" />
               </div>
-              <div className="p-6">
+              <div className="p-6 h-full">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold text-gray-900">{dish.name}</h3>
                   <span className="text-spice-600 font-bold">{dish.price}</span>
