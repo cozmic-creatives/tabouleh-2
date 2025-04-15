@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const featuredDishes = [{
   id: 1,
   name: 'Mix Grilled',
@@ -22,6 +24,7 @@ const featuredDishes = [{
   image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   category: 'Hoofdgerecht'
 }];
+
 const FeaturedDishes = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom mx-auto">
@@ -40,13 +43,13 @@ const FeaturedDishes = () => {
                   <h3 className="text-xl font-bold text-gray-900">{dish.name}</h3>
                   <span className="text-spice-600 font-bold">{dish.price}</span>
                 </div>
-                <div className="mb-4">
+                <div className="mb-3">
                   <span className="inline-block bg-olive-100 text-olive-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                     {dish.category}
                   </span>
                 </div>
-                <p className="text-gray-600 mb-4">{dish.description}</p>
-                <div className="mt-auto pt-2">
+                <p className="text-gray-600 mb-3">{dish.description}</p>
+                <div className="mt-auto">
                   <Link to="/menu" className="text-spice-600 hover:text-spice-700 font-medium inline-flex items-center">
                     Nu bestellen
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
