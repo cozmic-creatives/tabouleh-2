@@ -1,14 +1,10 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <footer className="bg-clay-100 pt-12 pb-6">
+  return <footer className="bg-clay-100 pt-12 pb-6">
       <div className="container-custom mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -31,22 +27,14 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <Collapsible
-              open={isOpen}
-              onOpenChange={setIsOpen}
-              className="border border-clay-200 rounded-md p-2 bg-white shadow-sm"
-            >
+            <Collapsible open={isOpen} onOpenChange={setIsOpen} className="border border-clay-200 rounded-md p-2 bg-white shadow-sm">
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-serif font-bold text-gray-800 flex items-center">
                   <Clock size={18} className="mr-2 text-spice-500" />
                   Openingstijden
                 </h3>
                 <CollapsibleTrigger className="rounded-full p-1 hover:bg-clay-100 transition-colors">
-                  {isOpen ? (
-                    <ChevronUp className="h-4 w-4 text-spice-500" />
-                  ) : (
-                    <ChevronDown className="h-4 w-4 text-spice-500" />
-                  )}
+                  {isOpen ? <ChevronUp className="h-4 w-4 text-spice-500" /> : <ChevronDown className="h-4 w-4 text-spice-500" />}
                 </CollapsibleTrigger>
               </div>
               <CollapsibleContent className="mt-2 space-y-2">
@@ -76,7 +64,7 @@ const Footer = () => {
             </Collapsible>
           </div>
           <div>
-            <h3 className="text-lg font-serif font-bold mb-4 text-gray-800">Neem Contact Op</h3>
+            <h3 className="text-lg font-serif font-bold mt-2 mb-4 text-gray-800">Neem Contact Op</h3>
             <div className="flex items-start space-x-2 mb-2">
               <MapPin size={18} className="mt-1 text-spice-500" />
               <p className="text-gray-600">Ledebergplein 17, 9050 Gent</p>
@@ -95,8 +83,6 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} TABOULEH 2 مطعم تبوله. Alle rechten voorbehouden.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
