@@ -6,7 +6,6 @@ import { MapPin, Phone, Mail, Clock, Utensils, Star } from 'lucide-react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 import SEO from '@/components/SEO';
-
 const Contact = () => {
   const contactSchema = {
     '@type': 'Restaurant',
@@ -22,15 +21,8 @@ const Contact = () => {
       longitude: '3.745584'
     }
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <SEO 
-        title="Contact & Bestellen - Neem contact op met TABOULEH 2"
-        description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten."
-        type="website"
-        schemaMarkup={contactSchema}
-      />
+  return <div className="min-h-screen flex flex-col">
+      <SEO title="Contact & Bestellen - Neem contact op met TABOULEH 2" description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten." type="website" schemaMarkup={contactSchema} />
       <Navbar />
       <main className="flex-grow">
         <section className="bg-clay-50 py-12">
@@ -58,27 +50,19 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Per Telefoon</h4>
-                        <p className="text-gray-600">Bel ons op +32 49 802 0482 om uw bestelling te plaatsen.</p>
+                        <p className="text-gray-600">Bel ons op +32 49 802 0482 om uw bestelling te plaatsen en af te halen.</p>
                       </div>
                     </div>
                     
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-10 w-10 rounded-full bg-spice-100 flex items-center justify-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-spice-600"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-medium text-gray-900">Online</h4>
-                        <p className="text-gray-600">Bestel via onze website of mobiele app.</p>
-                      </div>
-                    </div>
+                    
                     
                     <div className="flex">
                       <div className="flex-shrink-0 h-10 w-10 rounded-full bg-spice-100 flex items-center justify-center mr-4">
                         <Utensils className="h-5 w-5 text-spice-600" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-medium text-gray-900">Persoonlijk</h4>
-                        <p className="text-gray-600">Bezoek onze locatie en plaats uw bestelling persoonlijk.</p>
+                        <h4 className="text-lg font-medium text-gray-900">Dine in</h4>
+                        <p className="text-gray-600">Bezoek onze mooie locatie en geniet van een gezellige avond met vrienden en familie.</p>
                       </div>
                     </div>
                   </div>
@@ -132,21 +116,13 @@ const Contact = () => {
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                           Naam
                         </label>
-                        <input
-                          type="text"
-                          id="name"
-                          className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                        />
+                        <input type="text" id="name" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                       </div>
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                           Telefoon
                         </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                        />
+                        <input type="tel" id="phone" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                       </div>
                     </div>
                     
@@ -154,33 +130,21 @@ const Contact = () => {
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         E-mail
                       </label>
-                      <input
-                        type="email"
-                        id="email"
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                      />
+                      <input type="email" id="email" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                     </div>
                     
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                         Onderwerp
                       </label>
-                      <input
-                        type="text"
-                        id="subject"
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                      />
+                      <input type="text" id="subject" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                     </div>
                     
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                         Bericht
                       </label>
-                      <textarea
-                        id="message"
-                        rows={4}
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                      ></textarea>
+                      <textarea id="message" rows={4} className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"></textarea>
                     </div>
                     
                     <Button className="w-full bg-spice-600 hover:bg-spice-700">
@@ -298,22 +262,14 @@ const Contact = () => {
           <div className="container-custom mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Bezoek Ons</h2>
             <div className="rounded-lg overflow-hidden shadow-md h-80">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.1599595358507!2d3.743396776992651!3d51.03905534750757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371451f8773c1%3A0x5a31aeefa4dccf27!2sLedebergplein%2017%2C%209050%20Gent!5e0!3m2!1sen!2sbe!4v1712325693546!5m2!1sen!2sbe" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.1599595358507!2d3.743396776992651!3d51.03905534750757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371451f8773c1%3A0x5a31aeefa4dccf27!2sLedebergplein%2017%2C%209050%20Gent!5e0!3m2!1sen!2sbe!4v1712325693546!5m2!1sen!2sbe" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
