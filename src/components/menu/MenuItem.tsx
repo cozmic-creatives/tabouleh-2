@@ -37,9 +37,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
               Populair
             </span>
           </div>}
-        <div className="grow">
-          <p className="text-sm text-gray-600">{item.description}</p>
-        </div>
+        <div className="grow" />
+        <p className="text-sm text-gray-600">{item.description}</p>
       </div>
     </div>;
 };
