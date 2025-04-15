@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { MenuItem as MenuItemType } from '@/data/menuData';
 import { Badge } from '@/components/ui/badge';
-
 interface MenuItemProps {
   item: MenuItemType;
 }
-
 const MenuItem: React.FC<MenuItemProps> = ({
   item
 }) => {
@@ -36,21 +33,16 @@ const MenuItem: React.FC<MenuItemProps> = ({
           <span className="text-spice-600 font-bold border-spice-600">{item.price}</span>
         </div>
         <div className="flex flex-wrap gap-2 mb-2">
-          {item.popular && (
-            <Badge variant="secondary" className="bg-saffron-100 text-saffron-800 hover:bg-saffron-200 border-none">
+          {item.popular && <Badge variant="secondary" className="bg-saffron-100 border text-saffron-800 hover:bg-saffron-200 border-saffron">
               Populair
-            </Badge>
-          )}
-          {item.serves && (
-            <Badge variant="outline" className="bg-spice-50 text-spice-800 border-spice-200">
+            </Badge>}
+          {item.serves && <Badge variant="outline" className="bg-spice-50 text-spice-800 border-spice-200">
               Serveert {item.serves} {item.serves === 1 ? 'persoon' : 'personen'}
-            </Badge>
-          )}
+            </Badge>}
         </div>
         <div className="grow" />
         <p className="lg:text-base text-sm text-gray-600 border-t border-spice-400 pt-1 mt-2">{item.description}</p>
       </div>
     </div>;
 };
-
 export default MenuItem;
