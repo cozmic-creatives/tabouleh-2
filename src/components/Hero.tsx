@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,7 @@ const Hero = () => {
   return <div className="relative bg-clay-50 overflow-hidden decorative-border">
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
       <div className="container-custom mx-auto relative">
-        <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24">
+        <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24 gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">
             <div className="mb-2">
               <span className="text-henna-500 font-arabic text-xl">مطعم تبوله</span>
