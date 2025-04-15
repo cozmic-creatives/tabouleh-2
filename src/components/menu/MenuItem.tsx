@@ -23,8 +23,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
       })}
       </script>
 
-      <div className="aspect-square shrink-0">
-        <img src={item.image} alt={item.name} loading="lazy" className="w-full h-full object-cover" />
+      <div className="w-2/3 aspect-square shrink-0">
+        <img src={item.image} alt={item.name} loading="lazy" className="w-full h-full object-cover aspect-square" />
       </div>
       <div className="w-2/3 p-4 flex flex-col shrink-0">
         <div className="flex justify-between items-start mb-1 gap-4">
