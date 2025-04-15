@@ -1,3 +1,4 @@
+
 import React from 'react';
 const AboutSection = () => {
   return <section className="section-padding bg-clay-50">
@@ -11,17 +12,17 @@ const AboutSection = () => {
           </div>
           
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ons Syrische Erfgoed</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Onze Iraakse Roots</h2>
             <div className="border-l-4 border-spice-500 pl-6 mb-6">
               <p className="text-lg font-serif italic text-gray-600">
-                "Onze familierecepten zijn generaties lang doorgegeven, en brengen de authentieke smaken van Damascus naar uw deur."
+                "Vanuit de rijke culinaire traditie van Irak brengen wij onze passie voor heerlijk eten naar Ledeberg, Gent."
               </p>
             </div>
             <p className="text-gray-600 mb-4">
-              Opgericht door de familie Alhamoud in 2010, brengt Damascene Takeaway de rijke culinaire tradities van Syrië naar uw buurt. Onze recepten zijn over generaties heen bewaard en geperfectioneerd.
+              Tabouleh 2 is een nieuw restaurant in het hart van Ledeberg, Gent, waar wij, een gepassioneerd team met Iraakse roots, elke dag ons beste doen om authentieke en heerlijke maaltijden te bereiden.
             </p>
             <p className="text-gray-600 mb-6">
-              Elk gerecht wordt met zorg bereid met authentieke kruiden en traditionele methoden. We gebruiken de verste ingrediënten en bereiden alles dagelijks vers in huis om authentieke smaken en uitzonderlijke kwaliteit te garanderen.
+              Onze reis begon met de rijke smaken van Irak, en nu willen we de lokale gemeenschap laten genieten van onze authentieke gerechten. Met zorg geselecteerde ingrediënten en traditionele bereidingsmethoden brengen we de smaak van het Midden-Oosten rechtstreeks naar uw bord.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -44,3 +45,4 @@ const AboutSection = () => {
     </section>;
 };
 export default AboutSection;
+
