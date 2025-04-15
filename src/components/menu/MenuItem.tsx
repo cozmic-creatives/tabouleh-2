@@ -23,7 +23,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
       })}
       </script>
 
-      <div className="w-1/3">
+      <div className="w-1/3 aspect-square">
         <img src={item.image} alt={item.name} className="w-full h-full object-cover aspect-square" loading="lazy" />
       </div>
       <div className="w-2/3 p-4 flex flex-col">
