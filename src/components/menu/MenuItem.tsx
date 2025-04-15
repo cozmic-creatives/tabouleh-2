@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MenuItem as MenuItemType } from '@/data/menuData';
 interface MenuItemProps {
@@ -36,8 +37,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
               Populair
             </span>
           </div>}
-        <p className="text-sm text-gray-600">{item.description}</p>
-        {/* Removed "Add to Order" button */}
+        <div className="grow">
+          <p className="text-sm text-gray-600">{item.description}</p>
+        </div>
       </div>
     </div>;
 };
