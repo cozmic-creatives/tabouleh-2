@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
   return <div className="relative bg-clay-50 overflow-hidden decorative-border">
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
@@ -15,7 +14,7 @@ const Hero = () => {
               <span className="block">Authentieke</span>
               <span className="text-spice-600">Midden-Oosten Keuken</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 mx-auto lg:mx-0">
               Ontdek de rijke smaken van de Midden-Oosterse keuken: 
               Syrische specialiteiten, verfijnde Libanese gerechten, 
               authentieke Iraakse recepten - een culinaire reis door 
@@ -52,5 +51,4 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-spice-500 via-saffron-500 to-henna-500 opacity-80"></div>
     </div>;
 };
-
 export default Hero;
