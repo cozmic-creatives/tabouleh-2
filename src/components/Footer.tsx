@@ -56,7 +56,7 @@ const Footer = () => {
                   <p className="text-gray-600 text-right">14:00 - 22:00</p>
                   
                   <p className="text-gray-800 font-medium">Zondag</p>
-                  <p className="text-gray-600 text-right">02:00 - 22:00</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
                 </div>
               </CollapsibleContent>
             </Collapsible>
