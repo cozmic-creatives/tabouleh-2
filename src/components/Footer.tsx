@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
   return <footer className="bg-clay-100 pt-12 pb-6">
@@ -13,9 +12,7 @@ const Footer = () => {
               <span className="text-xl font-serif font-bold text-spice-600">TABOULEH 2</span>
               <span className="text-lg font-serif ml-2 text-olive-600">مطعم تبوله</span>
             </div>
-            <p className="text-gray-600 mb-4">
-              Authentieke Syrische keuken gemaakt met verse ingrediënten en traditionele recepten.
-            </p>
+            <p className="text-gray-600 mb-4">Authentieke Midden-Oost keuken gemaakt met verse ingrediënten en traditionele recepten.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-spice-600 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
@@ -86,5 +83,4 @@ const Footer = () => {
       </div>
     </footer>;
 };
-
 export default Footer;
