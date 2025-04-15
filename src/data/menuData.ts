@@ -1,4 +1,3 @@
-
 // Menu categories
 export const menuCategories = ['Alle', 'BBQ Gerechten', 'Onze Gerechten', 'Mezze', 'Soepen', 'Sandwiches', 'Menu Combinaties', 'Dranken'];
 
@@ -11,6 +10,7 @@ export interface MenuItem {
   category: string;
   popular: boolean;
   image: string;
+  serves?: number; // Optional property to indicate how many people the dish serves
 }
 
 // Menu items data
@@ -23,7 +23,8 @@ export const menuItems: MenuItem[] = [
     price: '€45,00',
     category: 'BBQ Gerechten',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    serves: 4
   },
   {
     id: 2,
@@ -79,7 +80,8 @@ export const menuItems: MenuItem[] = [
     price: '€18,00',
     category: 'Onze Gerechten',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    serves: 1
   },
   {
     id: 8,
@@ -492,7 +494,8 @@ export const menuItems: MenuItem[] = [
     price: '€65,00',
     category: 'Menu Combinaties',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1622542086387-907436a6e51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1622542086387-907436a6e51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    serves: 5
   },
   {
     id: 53,
@@ -501,7 +504,8 @@ export const menuItems: MenuItem[] = [
     price: '€14,00',
     category: 'Menu Combinaties',
     popular: false,
-    image: 'https://images.unsplash.com/photo-1544681280-d257afe2735c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1544681280-d257afe2735c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    serves: 1
   },
   {
     id: 54,
@@ -510,7 +514,8 @@ export const menuItems: MenuItem[] = [
     price: '€12,00',
     category: 'Menu Combinaties',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1527305850-5c5f1c4068a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1527305850-5c5f1c4068a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    serves: 1
   },
   {
     id: 55,
@@ -519,7 +524,8 @@ export const menuItems: MenuItem[] = [
     price: '€12,00',
     category: 'Menu Combinaties',
     popular: false,
-    image: 'https://images.unsplash.com/photo-1527305850-5c5f1c4068a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1527305850-5c5f1c4068a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    serves: 1
   },
   
   // Dranken
@@ -539,33 +545,4 @@ export const menuItems: MenuItem[] = [
     price: '€2,50',
     category: 'Dranken',
     popular: false,
-    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
-  },
-  {
-    id: 58,
-    name: 'Coca Cola',
-    description: 'Frisdrank.',
-    price: '€2,50',
-    category: 'Dranken',
-    popular: false,
-    image: 'https://images.unsplash.com/photo-1554866585-e4b2d83aa320?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
-  },
-  {
-    id: 59,
-    name: 'Fanta',
-    description: 'Frisdrank.',
-    price: '€2,50',
-    category: 'Dranken',
-    popular: false,
-    image: 'https://images.unsplash.com/photo-1624552184280-9e9631bbeee9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
-  },
-  {
-    id: 60,
-    name: 'Pepsi',
-    description: 'Frisdrank.',
-    price: '€2,50',
-    category: 'Dranken',
-    popular: false,
-    image: 'https://images.unsplash.com/photo-1629203432180-71e9b18d855e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
-  }
-];
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q
