@@ -8,6 +8,14 @@ import MenuGrid from './menu/MenuGrid';
 const MenuList = () => {
   const [activeCategory, setActiveCategory] = useState('Alle');
   const [showPopular, setShowPopular] = useState(false);
+  const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
+
+  const handleImageError = (itemId: number) => {
+    setImageErrors(prev => ({
+      ...prev,
+      [itemId]: true
+    }));
+  };
 
   const filteredItems = menuItems.filter(item => {
     const categoryMatch = activeCategory === 'Alle' || item.category === activeCategory;
@@ -33,7 +41,11 @@ const MenuList = () => {
       </div>
       
       <div className="mt-8">
-        <MenuGrid items={filteredItems} />
+        <MenuGrid 
+          items={filteredItems} 
+          imageErrors={imageErrors}
+          onImageError={handleImageError}
+        />
       </div>
     </div>
   );
