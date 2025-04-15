@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { MenuItem as MenuItemType } from '@/data/menuData';
 import { Badge } from '@/components/ui/badge';
-
 interface MenuItemProps {
   item: MenuItemType;
 }
-
 const MenuItem: React.FC<MenuItemProps> = ({
   item
 }) => {
@@ -35,7 +32,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
           <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
           <span className="text-spice-600 font-bold border-spice-600">{item.price}</span>
         </div>
-        <div className="flex flex-wrap gap-2 mb-2">
+        <div className="flex flex-wrap gap-2 mb-2 mt-1">
           {item.popular && <Badge variant="secondary" className="bg-saffron-100 border text-saffron-800 hover:bg-saffron-200 border-saffron-500">
               Populair
             </Badge>}
@@ -48,5 +45,4 @@ const MenuItem: React.FC<MenuItemProps> = ({
       </div>
     </div>;
 };
-
 export default MenuItem;
