@@ -38,7 +38,7 @@ const Footer = () => {
               <CollapsibleContent className="mt-2 space-y-2">
                 <div className="grid grid-cols-2 gap-1 text-sm">
                   <p className="text-gray-800 font-medium">Maandag</p>
-                  <p className="text-gray-600 text-right">02:00 - 22:00</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
                   
                   <p className="text-gray-800 font-medium">Dinsdag</p>
                   <p className="text-gray-600 text-right">Gesloten</p>
