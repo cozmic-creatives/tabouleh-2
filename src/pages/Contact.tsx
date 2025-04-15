@@ -8,12 +8,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import SEO from '@/components/SEO';
 
 const Contact = () => {
-  // Schema markup specific to the contact page
   const contactSchema = {
     '@type': 'Restaurant',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+32496210697',
+      telephone: '+32 49 802 0482',
       contactType: 'customer service',
       availableLanguage: ['Dutch', 'English', 'Arabic']
     },
@@ -59,7 +58,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Per Telefoon</h4>
-                        <p className="text-gray-600">Bel ons op +32496210697 om uw bestelling te plaatsen.</p>
+                        <p className="text-gray-600">Bel ons op +32 49 802 0482 om uw bestelling te plaatsen.</p>
                       </div>
                     </div>
                     
