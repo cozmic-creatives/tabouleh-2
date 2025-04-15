@@ -44,7 +44,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
       <div className="w-1/3 aspect-square shrink-0">
         <img src={imageToDisplay} alt={item.name} loading="lazy" onError={onImageError} className="w-full h-full object-cover aspect-square border-r border-spice-400" />
       </div>
-      <div className="w-2/3 p-4 flex flex-col shrink-0 bg-spice-50">
+      <div className="w-2/3 p-4 flex flex-col shrink-0">
         <div className="flex justify-between items-start mb-1 gap-4">
           <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
           <span className="text-spice-600 font-bold border-spice-600">{item.price}</span>
