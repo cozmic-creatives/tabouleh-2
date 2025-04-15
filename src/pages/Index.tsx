@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -7,7 +6,6 @@ import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import OrderButton from '@/components/OrderButton';
 import SEO from '@/components/SEO';
-
 const Index = () => {
   // Schema markup specific to the homepage
   const homeSchema = {
@@ -20,14 +18,8 @@ const Index = () => {
       url: 'https://tabouleh2.be/menu'
     }
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <SEO 
-        title="Authentieke Syrische Keuken in Gent"
-        description="Geniet van de rijke smaken van Damascus met onze authentieke familierecepten, dagelijks vers bereid met traditionele kruiden en technieken. Bestel online, afhalen of dineer ter plaatse!"
-        schemaMarkup={homeSchema}
-      />
+  return <div className="min-h-screen flex flex-col">
+      <SEO title="Authentieke Syrische Keuken in Gent" description="Geniet van de rijke smaken van Damascus met onze authentieke familierecepten, dagelijks vers bereid met traditionele kruiden en technieken. Bestel online, afhalen of dineer ter plaatse!" schemaMarkup={homeSchema} />
       <Navbar />
       <main className="flex-grow">
         <Hero />
@@ -37,10 +29,7 @@ const Index = () => {
         <section className="py-16 bg-spice-600 text-white text-center">
           <div className="container-custom mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Klaar om te Bestellen?</h2>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
-              Geniet van authentieke Syrische keuken bij TABOULEH 2.
-              Beschikbaar voor afhalen, bezorging, of dineer ter plaatse!
-            </p>
+            <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">Geniet van authentieke Midden-Oost keuken bij TABOULEH 2. Beschikbaar voor afhalen, bezorging, of dineer ter plaatse!</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <OrderButton className="bg-white hover:bg-gray-100 text-spice-600" text="Plaats je Bestelling" />
               <div className="text-white font-bold">of bel +32496210697</div>
@@ -49,8 +38,6 @@ const Index = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
