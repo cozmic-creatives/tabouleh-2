@@ -23,10 +23,10 @@ const MenuItem: React.FC<MenuItemProps> = ({
       })}
       </script>
 
-      <div className="w-1/3 aspect-square">
-        <img src={item.image} alt={item.name} className="w-full h-full object-cover aspect-square" loading="lazy" />
+      <div className="aspect-square shrink-0">
+        <img src={item.image} alt={item.name} loading="lazy" className="w-full h-full object-cover" />
       </div>
-      <div className="w-2/3 p-4 flex flex-col">
+      <div className="w-2/3 p-4 flex flex-col shrink-0">
         <div className="flex justify-between items-start mb-1">
           <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
           <span className="text-spice-600 font-bold border-spice-600">{item.price}</span>
