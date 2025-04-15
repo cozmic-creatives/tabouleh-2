@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const featuredDishes = [{
   id: 1,
   name: 'Mix Grilled',
@@ -24,7 +22,6 @@ const featuredDishes = [{
   image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   category: 'Hoofdgerecht'
 }];
-
 const FeaturedDishes = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom mx-auto">
@@ -68,5 +65,4 @@ const FeaturedDishes = () => {
       </div>
     </section>;
 };
-
 export default FeaturedDishes;
