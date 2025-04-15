@@ -10,17 +10,17 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24">
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">
             <div className="mb-2">
-              <span className="text-henna-500 font-arabic text-xl">مطعم تبوله</span>
+              <span className="text-henna-500 font-arabic text-xl">مطعم تبولة</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
               <span className="block">Authentieke</span>
-              <span className="text-spice-600">Midden-Oosten Keuken</span>
+              <span className="text-spice-600">Iraaks-Arabische Keuken</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
-              Ontdek de rijke smaken van de Midden-Oosterse keuken: 
-              Syrische specialiteiten, verfijnde Libanese gerechten, 
-              authentieke Iraakse recepten - een culinaire reis door 
-              het hart van het Midden-Oosten.
+              Ontdek Tabouleh 2: Een passievol familiebedrijf in het hart van Ledeberg, Gent. 
+              Onze roots liggen in Irak, waar we de rijkste smaken en warmste tradities van 
+              de Midden-Oosterse keuken hebben geleerd. Elke schotel vertelt het verhaal van 
+              onze reis, bereid met liefde en authentieke recepten die generaties overleven.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button asChild size="lg" className="bg-spice-600 hover:bg-spice-700 relative overflow-hidden group">
@@ -44,7 +44,7 @@ const Hero = () => {
               <div className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-saffron-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
               
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
-              <img alt="Syrisch Eten" className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full" src="https://images.unsplash.com/photo-1707151550757-fd379e80d1d2?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+              <img alt="Irakees Arabisch Eten" className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full" src="https://images.unsplash.com/photo-1707151550757-fd379e80d1d2?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
           </div>
         </div>
