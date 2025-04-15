@@ -37,7 +37,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             </span>
           </div>}
         <div className="grow" />
-        <p className="lg:text-base text-sm text-gray-600 border-t border-spice-200 pt-1">{item.description}</p>
+        <p className="lg:text-base text-sm text-gray-600 border-t border-spice-200 pt-1 mt-2">{item.description}</p>
       </div>
     </div>;
 };
