@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MenuItem as MenuItemType } from '@/data/menuData';
 interface MenuItemProps {
@@ -30,7 +29,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
       <div className="w-2/3 p-4 flex flex-col">
         <div className="flex justify-between items-start mb-1">
           <h3 className="text-lg font-bold text-gray-900">{item.name}</h3>
-          <span className="text-spice-600 font-bold">{item.price}</span>
+          <span className="text-spice-600 font-bold border-spice-600">{item.price}</span>
         </div>
         {item.popular && <div className="mb-2">
             <span className="inline-block bg-saffron-100 text-saffron-800 text-xs font-semibold px-2.5 py-0.5 rounded">
@@ -38,7 +37,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             </span>
           </div>}
         <div className="grow" />
-        <p className="text-sm text-gray-600">{item.description}</p>
+        <p className="text-sm text-gray-600 border-t border-spice-200 pt-1">{item.description}</p>
       </div>
     </div>;
 };
