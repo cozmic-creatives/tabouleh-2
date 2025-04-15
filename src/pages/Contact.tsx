@@ -60,7 +60,7 @@ const Contact = () => {
                       <div className="flex-shrink-0 h-10 w-10 rounded-full bg-spice-100 flex items-center justify-center mr-4">
                         <Utensils className="h-5 w-5 text-spice-600" />
                       </div>
-                      <div>
+                      <div className="text-base font-normal">
                         <h4 className="text-lg font-medium text-gray-900">Dine in</h4>
                         <p className="text-gray-600">Bezoek onze mooie locatie en geniet van een gezellige avond met vrienden en familie.</p>
                       </div>
