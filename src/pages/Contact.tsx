@@ -6,6 +6,7 @@ import { MapPin, Phone, Mail, Clock, Utensils, Star } from 'lucide-react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 import SEO from '@/components/SEO';
+
 const Contact = () => {
   const contactSchema = {
     '@type': 'Restaurant',
@@ -21,6 +22,7 @@ const Contact = () => {
       longitude: '3.745584'
     }
   };
+
   return <div className="min-h-screen flex flex-col">
       <SEO title="Contact & Bestellen - Neem contact op met TABOULEH 2" description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten." type="website" schemaMarkup={contactSchema} />
       <Navbar />
@@ -76,13 +78,13 @@ const Contact = () => {
                       <Clock className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">Openingstijden</h4>
-                        <p className="text-gray-600">Maandag: 02:00 - 22:00</p>
+                        <p className="text-gray-600">Maandag: 14:00 - 22:00</p>
                         <p className="text-gray-600">Dinsdag: Gesloten</p>
                         <p className="text-gray-600">Woensdag: 14:00 - 22:00</p>
                         <p className="text-gray-600">Donderdag: 14:00 - 22:00</p>
                         <p className="text-gray-600">Vrijdag: 14:00 - 22:00</p>
                         <p className="text-gray-600">Zaterdag: 14:00 - 22:00</p>
-                        <p className="text-gray-600">Zondag: 02:00 - 22:00</p>
+                        <p className="text-gray-600">Zondag: 14:00 - 22:00</p>
                       </div>
                     </div>
                     
@@ -272,4 +274,5 @@ const Contact = () => {
       <Footer />
     </div>;
 };
+
 export default Contact;
