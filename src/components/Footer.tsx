@@ -1,15 +1,7 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@/components/ui/table";
-
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
   return <footer className="bg-clay-100 pt-12 pb-6">
@@ -43,39 +35,29 @@ const Footer = () => {
                   {isOpen ? <ChevronUp className="h-4 w-4 text-spice-500" /> : <ChevronDown className="h-4 w-4 text-spice-500" />}
                 </CollapsibleTrigger>
               </div>
-              <CollapsibleContent className="mt-2">
-                <Table>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Maandag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">14:00 - 22:00</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Dinsdag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">Gesloten</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Woensdag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">14:00 - 22:00</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Donderdag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">14:00 - 22:00</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Vrijdag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">14:00 - 22:00</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Zaterdag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">14:00 - 22:00</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="py-1 pl-0 text-gray-800 font-medium">Zondag</TableCell>
-                      <TableCell className="py-1 pr-0 text-gray-600 text-right">14:00 - 22:00</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
+              <CollapsibleContent className="mt-2 space-y-2">
+                <div className="grid grid-cols-2 gap-1 text-sm">
+                  <p className="text-gray-800 font-medium">Maandag</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
+                  
+                  <p className="text-gray-800 font-medium">Dinsdag</p>
+                  <p className="text-gray-600 text-right">Gesloten</p>
+                  
+                  <p className="text-gray-800 font-medium">Woensdag</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
+                  
+                  <p className="text-gray-800 font-medium">Donderdag</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
+                  
+                  <p className="text-gray-800 font-medium">Vrijdag</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
+                  
+                  <p className="text-gray-800 font-medium">Zaterdag</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
+                  
+                  <p className="text-gray-800 font-medium">Zondag</p>
+                  <p className="text-gray-600 text-right">14:00 - 22:00</p>
+                </div>
               </CollapsibleContent>
             </Collapsible>
           </div>

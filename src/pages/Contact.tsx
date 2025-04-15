@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -7,15 +6,6 @@ import { MapPin, Phone, Mail, Clock, Utensils, Star } from 'lucide-react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 import SEO from '@/components/SEO';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
 const Contact = () => {
   const contactSchema = {
     '@type': 'Restaurant',
@@ -64,6 +54,8 @@ const Contact = () => {
                       </div>
                     </div>
                     
+                    
+                    
                     <div className="flex">
                       <div className="flex-shrink-0 h-10 w-10 rounded-full bg-spice-100 flex items-center justify-center mr-4">
                         <Utensils className="h-5 w-5 text-spice-600" />
@@ -82,46 +74,15 @@ const Contact = () => {
                   <div className="space-y-6">
                     <div className="flex">
                       <Clock className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
-                      <div className="w-full">
-                        <h4 className="text-lg font-medium text-gray-900 mb-2">Openingstijden</h4>
-                        <Table>
-                          <TableHeader>
-                            <TableRow>
-                              <TableHead>Dag</TableHead>
-                              <TableHead>Tijden</TableHead>
-                            </TableRow>
-                          </TableHeader>
-                          <TableBody>
-                            <TableRow>
-                              <TableCell className="font-medium">Maandag</TableCell>
-                              <TableCell>02:00 - 22:00</TableCell>
-                            </TableRow>
-                            <TableRow>
-                              <TableCell className="font-medium">Dinsdag</TableCell>
-                              <TableCell>Gesloten</TableCell>
-                            </TableRow>
-                            <TableRow>
-                              <TableCell className="font-medium">Woensdag</TableCell>
-                              <TableCell>14:00 - 22:00</TableCell>
-                            </TableRow>
-                            <TableRow>
-                              <TableCell className="font-medium">Donderdag</TableCell>
-                              <TableCell>14:00 - 22:00</TableCell>
-                            </TableRow>
-                            <TableRow>
-                              <TableCell className="font-medium">Vrijdag</TableCell>
-                              <TableCell>14:00 - 22:00</TableCell>
-                            </TableRow>
-                            <TableRow>
-                              <TableCell className="font-medium">Zaterdag</TableCell>
-                              <TableCell>14:00 - 22:00</TableCell>
-                            </TableRow>
-                            <TableRow>
-                              <TableCell className="font-medium">Zondag</TableCell>
-                              <TableCell>02:00 - 22:00</TableCell>
-                            </TableRow>
-                          </TableBody>
-                        </Table>
+                      <div>
+                        <h4 className="text-lg font-medium text-gray-900">Openingstijden</h4>
+                        <p className="text-gray-600">Maandag: 02:00 - 22:00</p>
+                        <p className="text-gray-600">Dinsdag: Gesloten</p>
+                        <p className="text-gray-600">Woensdag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Donderdag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Vrijdag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Zaterdag: 14:00 - 22:00</p>
+                        <p className="text-gray-600">Zondag: 02:00 - 22:00</p>
                       </div>
                     </div>
                     
