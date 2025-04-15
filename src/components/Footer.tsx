@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <Collapsible open={isOpen} onOpenChange={setIsOpen} className="border border-clay-200 rounded-md p-2 shadow-sm bg-white/[0.61]">
+            <Collapsible open={isOpen} onOpenChange={setIsOpen} className="border border-clay-200 rounded-md px-4 py-3 shadow-sm bg-white/[0.61]">
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-serif font-bold text-gray-800 flex items-center">
                   <Clock size={18} className="mr-2 text-spice-500" />
