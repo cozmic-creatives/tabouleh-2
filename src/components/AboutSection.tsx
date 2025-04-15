@@ -3,7 +3,7 @@ import React from 'react';
 const AboutSection = () => {
   return <section className="section-padding bg-clay-50">
       <div className="container-custom mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 order-2 lg:order-1">
             <div className="relative">
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform -rotate-3 z-0"></div>
@@ -44,5 +44,6 @@ const AboutSection = () => {
       </div>
     </section>;
 };
+
 export default AboutSection;
 
