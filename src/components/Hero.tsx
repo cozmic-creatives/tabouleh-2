@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -54,7 +53,7 @@ const Hero = () => {
               
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
               
-              <div className="relative transform -rotate-2 z-10 aspect-[4/3] w-full">
+              <div className="relative transform -rotate-2 z-10 aspect-square w-full">
                 <HeroImageTransition images={heroImages} interval={5000} />
               </div>
             </div>

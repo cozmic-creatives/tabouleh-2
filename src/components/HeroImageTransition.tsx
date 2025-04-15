@@ -38,7 +38,7 @@ const HeroImageTransition: React.FC<HeroImageTransitionProps> = ({
   }, [images, interval]);
 
   return (
-    <div className={`relative w-full h-full ${className}`}>
+    <div className={`relative w-full aspect-square ${className}`}>
       <img 
         src={images[currentImageIndex]} 
         alt="Hero illustration" 
