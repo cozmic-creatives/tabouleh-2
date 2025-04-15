@@ -33,7 +33,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
           <span className="text-spice-600 font-bold border-spice-600">{item.price}</span>
         </div>
         <div className="flex flex-wrap gap-2 mb-2">
-          {item.popular && <Badge variant="secondary" className="bg-saffron-100 border text-saffron-800 hover:bg-saffron-200 border-saffron">
+          {item.popular && <Badge variant="secondary" className="bg-saffron-100 border text-saffron-800 hover:bg-saffron-200 border-saffron-500">
               Populair
             </Badge>}
           {item.serves && <Badge variant="outline" className="bg-spice-50 text-spice-800 border-spice-200">
