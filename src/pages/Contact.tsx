@@ -111,11 +111,11 @@ const Contact = () => {
                       </div>
                     </div>
                     
-                    <div className="flex">
-                      <Mail className="h-5 w-5 text-spice-600 mt-1 mr-3 flex-shrink-0" />
+                    <div className="flex items-start space-x-2">
+                      <Mail size={18} className="mt-1 text-spice-500" />
                       <div>
                         <h4 className="text-lg font-medium text-gray-900">E-mail</h4>
-                        <p className="text-gray-600">info@tabouleh2.be</p>
+                        <p className="text-gray-600">hayder@tabouleh2.be</p>
                       </div>
                     </div>
                   </div>
