@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const featuredDishes = [{
   id: 1,
   name: 'Mix Grilled',
@@ -22,6 +24,7 @@ const featuredDishes = [{
   image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   category: 'Hoofdgerecht'
 }];
+
 const FeaturedDishes = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom mx-auto">
@@ -31,11 +34,11 @@ const FeaturedDishes = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuredDishes.map(dish => <div key={dish.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          {featuredDishes.map(dish => <div key={dish.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full">
               <div className="h-48 overflow-hidden">
                 <img src={dish.image} alt={dish.name} className="w-full h-full object-cover transition-transform hover:scale-105" />
               </div>
-              <div className="p-6 h-full">
+              <div className="p-6 flex flex-col h-full">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold text-gray-900">{dish.name}</h3>
                   <span className="text-spice-600 font-bold">{dish.price}</span>
@@ -46,10 +49,12 @@ const FeaturedDishes = () => {
                   </span>
                 </div>
                 <p className="text-gray-600 mb-4">{dish.description}</p>
-                <Link to="/menu" className="text-spice-600 hover:text-spice-700 font-medium inline-flex items-center">
-                  Nu bestellen
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                </Link>
+                <div className="mt-auto pt-2">
+                  <Link to="/menu" className="text-spice-600 hover:text-spice-700 font-medium inline-flex items-center">
+                    Nu bestellen
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </Link>
+                </div>
               </div>
             </div>)}
         </div>
@@ -63,4 +68,5 @@ const FeaturedDishes = () => {
       </div>
     </section>;
 };
+
 export default FeaturedDishes;
