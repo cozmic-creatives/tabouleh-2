@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+
 const Hero = () => {
   return <div className="relative bg-clay-50 overflow-hidden decorative-border">
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
@@ -13,11 +14,13 @@ const Hero = () => {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
               <span className="block">Authentieke</span>
-              <span className="text-spice-600">Syrische Keuken</span>
+              <span className="text-spice-600">Midden-Oosten Keuken</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
-              Geniet van de rijke smaken van Damascus met onze authentieke familierecepten,
-              dagelijks vers bereid met traditionele kruiden en technieken.
+              Ontdek de rijke smaken van de Midden-Oosterse keuken: 
+              Syrische specialiteiten, verfijnde Libanese gerechten, 
+              authentieke Iraakse recepten - een culinaire reis door 
+              het hart van het Midden-Oosten.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button asChild size="lg" className="bg-spice-600 hover:bg-spice-700 relative overflow-hidden group">
@@ -40,8 +43,6 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-saffron-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
               
-              {/* Removed decorative corner elements */}
-              
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
               <img alt="Syrisch Eten" className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full" src="https://images.unsplash.com/photo-1707151550757-fd379e80d1d2?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
@@ -49,8 +50,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Decorative bottom border */}
       <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-spice-500 via-saffron-500 to-henna-500 opacity-80"></div>
     </div>;
 };
+
 export default Hero;
