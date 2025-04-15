@@ -1,3 +1,4 @@
+
 // Menu categories
 export const menuCategories = ['Alle', 'BBQ Gerechten', 'Onze Gerechten', 'Mezze', 'Soepen', 'Sandwiches', 'Menu Combinaties', 'Dranken'];
 
@@ -545,4 +546,6 @@ export const menuItems: MenuItem[] = [
     price: '€2,50',
     category: 'Dranken',
     popular: false,
-    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+  }
+];
