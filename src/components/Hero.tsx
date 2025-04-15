@@ -1,9 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import HeroCarousel from './HeroCarousel';
-
 const Hero = () => {
   return <div className="relative bg-clay-50 overflow-hidden decorative-border">
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
@@ -45,7 +42,7 @@ const Hero = () => {
               <div className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-saffron-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
               
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
-              <HeroCarousel />
+              <img alt="Syrisch Eten" className="relative rounded-2xl shadow-lg z-10 transform -rotate-2 w-full" src="https://images.unsplash.com/photo-1707151550757-fd379e80d1d2?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
           </div>
         </div>
