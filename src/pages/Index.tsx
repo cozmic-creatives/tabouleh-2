@@ -32,7 +32,7 @@ const Index = () => {
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">Geniet van authentieke Midden-Oost keuken bij TABOULEH 2. Beschikbaar voor afhalen of dineer ter plaatse!</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <OrderButton className="bg-white hover:bg-gray-100 text-spice-600" text="Plaats je Bestelling" />
-              <div className="text-white font-bold">of bel +32496210697</div>
+              <div className="text-white font-bold">of bel +32 49 802 0482</div>
             </div>
           </div>
         </section>
