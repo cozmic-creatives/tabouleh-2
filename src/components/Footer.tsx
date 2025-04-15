@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
@@ -32,15 +31,50 @@ const Footer = () => {
             <div className="flex items-start space-x-2 mb-2">
               <Clock size={18} className="mt-1 text-spice-500" />
               <div>
-                <p className="text-gray-800 font-medium">Woensdag - Maandag</p>
+                <p className="text-gray-800 font-medium">Maandag</p>
+                <p className="text-gray-600">02:00 - 22:00</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-2 mb-2">
+              <Clock size={18} className="mt-1 text-spice-500" />
+              <div>
+                <p className="text-gray-800 font-medium">Dinsdag</p>
+                <p className="text-gray-600">Gesloten</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-2 mb-2">
+              <Clock size={18} className="mt-1 text-spice-500" />
+              <div>
+                <p className="text-gray-800 font-medium">Woensdag</p>
+                <p className="text-gray-600">14:00 - 22:00</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-2 mb-2">
+              <Clock size={18} className="mt-1 text-spice-500" />
+              <div>
+                <p className="text-gray-800 font-medium">Donderdag</p>
+                <p className="text-gray-600">14:00 - 22:00</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-2 mb-2">
+              <Clock size={18} className="mt-1 text-spice-500" />
+              <div>
+                <p className="text-gray-800 font-medium">Vrijdag</p>
+                <p className="text-gray-600">14:00 - 22:00</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-2 mb-2">
+              <Clock size={18} className="mt-1 text-spice-500" />
+              <div>
+                <p className="text-gray-800 font-medium">Zaterdag</p>
                 <p className="text-gray-600">14:00 - 22:00</p>
               </div>
             </div>
             <div className="flex items-start space-x-2">
               <Clock size={18} className="mt-1 text-spice-500" />
               <div>
-                <p className="text-gray-800 font-medium">Dinsdag</p>
-                <p className="text-gray-600">Gesloten</p>
+                <p className="text-gray-800 font-medium">Zondag</p>
+                <p className="text-gray-600">02:00 - 22:00</p>
               </div>
             </div>
           </div>
