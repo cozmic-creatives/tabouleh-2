@@ -6,7 +6,7 @@ interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({
   item
 }) => {
-  return <div className="flex bg-white rounded-lg shadow-md overflow-hidden">
+  return <div className="flex bg-white rounded-lg shadow-md overflow-hidden border">
       {/* JSON-LD structured data for this menu item */}
       <script type="application/ld+json">
         {JSON.stringify({
