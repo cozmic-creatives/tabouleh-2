@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { MenuItem as MenuItemType } from '@/data/menuData';
 
 interface MenuItemProps {
@@ -31,7 +30,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
           src={item.image} 
           alt={item.name} 
           className="w-full h-full object-cover aspect-square"
-          loading="lazy" // Add lazy loading for images
+          loading="lazy"
         />
       </div>
       <div className="w-2/3 p-4">
@@ -47,12 +46,11 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
           </div>
         )}
         <p className="text-sm text-gray-600">{item.description}</p>
-        <Button className="mt-3 bg-spice-600 hover:bg-spice-700 text-sm px-3 py-1 h-auto" size="sm">
-          Toevoegen aan Bestelling
-        </Button>
+        {/* Removed "Add to Order" button */}
       </div>
     </div>
   );
 };
 
 export default MenuItem;
+
