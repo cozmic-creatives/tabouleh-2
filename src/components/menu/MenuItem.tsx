@@ -58,7 +58,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             </Badge>}
         </div>
         <div className="grow" />
-        <p className="text-sm text-gray-600 border-t border-spice-300 pt-1 mt-2">{item.description}</p>
+        <p className="lg:text-base text-sm text-gray-600 border-t border-spice-300 pt-1 mt-2">{item.description}</p>
       </div>
     </div>;
 };
