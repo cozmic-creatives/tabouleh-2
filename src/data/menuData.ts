@@ -1,4 +1,3 @@
-
 // Menu categories
 export const menuCategories = ['Alle', 'BBQ Gerechten', 'Onze Gerechten', 'Mezze', 'Soepen', 'Sandwiches', 'Menu Combinaties', 'Dranken'];
 
@@ -96,7 +95,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 9,
     name: 'Rijst Met Soep',
-    description: 'Rijst met soep, 4 stukjes carbonade (met rijst/bulgur met tomatensaus of friet).',
+    description: 'Rijst met soep, 4 stukjes kip (met rijst/bulgur met tomatensaus of friet).',
     price: '€10,00',
     category: 'Onze Gerechten',
     popular: false,
@@ -131,8 +130,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 13,
-    name: 'Cotelette',
-    description: '4 stuks varkenskoteletten (met rijst/bulgur met tomatensaus of friet).',
+    name: 'Runderkoteletten',
+    description: '4 stuks runderkoteletten (met rijst/bulgur met tomatensaus of friet).',
     price: '€18,00',
     category: 'Onze Gerechten',
     popular: false,
@@ -196,7 +195,7 @@ export const menuItems: MenuItem[] = [
   // Mezze
   {
     id: 20,
-    name: 'Cheken Nuget',
+    name: 'Chicken Nuggets',
     description: '6 chicken nuggets.',
     price: '€7,00',
     category: 'Mezze',
@@ -206,7 +205,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 21,
     name: 'Burger',
-    description: 'Met friet en saus.',
+    description: 'Halal rundvleesburger met friet en saus.',
     price: '€7,00',
     category: 'Mezze',
     popular: false,
@@ -444,7 +443,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 47,
     name: 'Shoarma',
-    description: 'Libanees brood.',
+    description: 'Libanees brood met kipshoarma.',
     price: '€7,50',
     category: 'Sandwiches',
     popular: true,
