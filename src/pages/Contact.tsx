@@ -37,7 +37,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "http://n8n.matthewbracke.com/webhook/contact-form",
+        "https://n8n.matthewbracke.com/webhook/contact-form",
         {
           method: "POST",
           headers: {
