@@ -26,7 +26,9 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
+    // Store reference to the form element
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const data = {
       name: formData.get("name"),
       email: formData.get("email"),
@@ -49,7 +51,7 @@ const Contact = () => {
 
       if (response.ok) {
         alert("Bericht verzonden! We nemen snel contact met je op.");
-        e.currentTarget.reset();
+        form.reset(); // Use the stored reference instead of e.currentTarget
       } else {
         alert("Er is iets misgegaan. Probeer het opnieuw.");
       }
