@@ -6,6 +6,7 @@ import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import OrderButton from '@/components/OrderButton';
 import SEO from '@/components/SEO';
+
 const Index = () => {
   // Schema markup specific to the homepage
   const homeSchema = {
