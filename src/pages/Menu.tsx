@@ -35,7 +35,7 @@ const Menu = () => {
         <section className="bg-clay-50 py-12">
           <div className="container-custom mx-auto text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Ons Menu</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Ontdek onze authentieke Midden-Oost gerechten, gemaakt met traditionele recepten en de verste ingrediënten.</p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Ontdek onze authentieke Midden-Oost gerechten, gemaakt met traditionele recepten en de verste ingrediënten. Alles is 100% Halal.</p>
           </div>
         </section>
         
