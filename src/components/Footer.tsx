@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
   return <footer className="bg-clay-100 pt-12 pb-6">
@@ -73,7 +74,7 @@ const Footer = () => {
             </div>
             <div className="flex items-start space-x-2">
               <Mail size={18} className="mt-1 text-spice-500" />
-              <p className="text-gray-600">hayder@tabouleh2.be</p>
+              <p className="text-gray-600">info@tabouleh2.be</p>
             </div>
           </div>
         </div>
@@ -83,4 +84,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;

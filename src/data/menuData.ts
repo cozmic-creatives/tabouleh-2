@@ -130,8 +130,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 13,
-    name: 'Runderkoteletten',
-    description: '4 stuks runderkoteletten (met rijst/bulgur met tomatensaus of friet).',
+    name: 'Lamskoteletten',
+    description: '4 stuks lamskoteletten (met rijst/bulgur met tomatensaus of friet).',
     price: '€18,00',
     category: 'Onze Gerechten',
     popular: false,
@@ -545,6 +545,4 @@ export const menuItems: MenuItem[] = [
     price: '€2,50',
     category: 'Dranken',
     popular: false,
-    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
-  }
-];
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto
