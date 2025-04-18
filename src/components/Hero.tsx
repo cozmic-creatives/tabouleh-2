@@ -1,10 +1,10 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroImageTransition from "./HeroImageTransition";
 
 const Hero = () => {
-  // Array of hero images
   const heroImages = [
     "/images/restaurant-inside-6.jpeg",
     "https://images.unsplash.com/photo-1707151550757-fd379e80d1d2?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -15,10 +15,10 @@ const Hero = () => {
 
   return (
     <div className="relative bg-clay-50 overflow-hidden decorative-border">
-      {/* Arabic Pattern Background */}
+      {/* Enhanced Arabic Pattern Background */}
       <div className="absolute inset-0">
         <svg 
-          className="w-full h-full opacity-[0.03] text-spice-600"
+          className="w-full h-full opacity-[0.04] text-spice-600"
           xmlns="http://www.w3.org/2000/svg" 
           width="100%" 
           height="100%"
@@ -27,13 +27,13 @@ const Hero = () => {
             id="arabicPattern"
             x="0"
             y="0"
-            width="56"
-            height="56"
+            width="64"
+            height="64"
             patternUnits="userSpaceOnUse"
           >
             <path
               fill="currentColor"
-              d="M28 0c15.464 0 28 12.536 28 28S43.464 56 28 56 0 43.464 0 28 12.536 0 28 0zm0 4C14.745 4 4 14.745 4 28s10.745 24 24 24 24-10.745 24-24S41.255 4 28 4zm0 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S8 39.046 8 28 16.954 8 28 8zm0 4c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zm0 4c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12zm0 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 4a4 4 0 110 8 4 4 0 010-8z"
+              d="M32 0l32 32-32 32L0 32 32 0zm0 8L8 32l24 24 24-24L32 8zm0 8l16 16-16 16-16-16 16-16zm0 8l-8 8 8 8 8-8-8-8zm32-16L48 24l16 16V8zM0 8v32l16-16L0 8zm64 48L48 40l-16 16h32zM32 56L16 40 0 56h32z"
             />
           </pattern>
           <rect width="100%" height="100%" fill="url(#arabicPattern)" />
@@ -45,6 +45,7 @@ const Hero = () => {
       
       <div className="container-custom mx-auto relative">
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24 gap-12 lg:gap-16">
+          {/* Left content column */}
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">
             <div className="mb-2">
               <span className="text-henna-500 font-arabic text-xl">
@@ -90,9 +91,13 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Right image column with enhanced gradients */}
           <div className="w-full lg:w-1/2 px-4">
             <div className="relative">
+              {/* Additional gradient accents */}
               <div className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-saffron-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+              <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-spice-500 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float delay-200"></div>
+              <div className="absolute top-1/2 -translate-y-1/2 -left-12 w-24 h-24 bg-henna-400 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-float delay-500"></div>
 
               <div className="absolute inset-0 rounded-3xl border-2 border-clay-200 transform rotate-3 z-0"></div>
 
