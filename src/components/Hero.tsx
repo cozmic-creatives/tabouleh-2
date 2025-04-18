@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -15,36 +14,14 @@ const Hero = () => {
 
   return (
     <div className="relative bg-clay-50 overflow-hidden decorative-border">
-      {/* Enhanced Arabic Pattern Background */}
-      <div className="absolute inset-0">
-        <svg 
-          className="w-full h-full opacity-[0.04] text-spice-600"
-          xmlns="http://www.w3.org/2000/svg" 
-          width="100%" 
-          height="100%"
-        >
-          <pattern
-            id="arabicPattern"
-            x="0"
-            y="0"
-            width="64"
-            height="64"
-            patternUnits="userSpaceOnUse"
-          >
-            <path
-              fill="currentColor"
-              d="M32 0l32 32-32 32L0 32 32 0zm0 8L8 32l24 24 24-24L32 8zm0 8l16 16-16 16-16-16 16-16zm0 8l-8 8 8 8 8-8-8-8zm32-16L48 24l16 16V8zM0 8v32l16-16L0 8zm64 48L48 40l-16 16h32zM32 56L16 40 0 56h32z"
-            />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#arabicPattern)" />
-        </svg>
-      </div>
-      
-      {/* Original Arabic Pattern (keeping for layered effect) */}
-      <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
-      
+      {/* Arabic pattern background */}
+      <div
+        className="absolute inset-0 z-0 bg-[url('/images/arabic-pattern.jpg')] bg-center opacity-5 mix-blend-multiply bg-[size:200%_auto] md:bg-cover"
+        aria-hidden="true"
+      ></div>
+
       <div className="container-custom mx-auto relative">
-        <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24 gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-20 gap-12 lg:gap-16">
           {/* Left content column */}
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">
             <div className="mb-2">
