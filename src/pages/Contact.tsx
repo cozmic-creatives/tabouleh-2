@@ -6,7 +6,6 @@ import { MapPin, Phone, Mail, Clock, Utensils, Star } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import SEO from "@/components/SEO";
-
 const Contact = () => {
   const contactSchema = {
     "@type": "Restaurant",
@@ -14,18 +13,16 @@ const Contact = () => {
       "@type": "ContactPoint",
       telephone: "+32 49 802 0482",
       contactType: "customer service",
-      availableLanguage: ["Dutch", "English", "Arabic"],
+      availableLanguage: ["Dutch", "English", "Arabic"]
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: "51.039054",
-      longitude: "3.745584",
-    },
+      longitude: "3.745584"
+    }
   };
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     const form = e.currentTarget;
     const formData = new FormData(form);
     const data = {
@@ -33,21 +30,16 @@ const Contact = () => {
       email: formData.get("email"),
       phone: formData.get("phone"),
       subject: formData.get("subject"),
-      message: formData.get("message"),
+      message: formData.get("message")
     };
-
     try {
-      const response = await fetch(
-        "https://n8n.matthewbracke.com/webhook/contact-form",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        }
-      );
-
+      const response = await fetch("https://n8n.matthewbracke.com/webhook/contact-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
       if (response.ok) {
         alert("Bericht verzonden! We nemen snel contact met je op.");
         form.reset();
@@ -59,15 +51,8 @@ const Contact = () => {
       alert("Verzenden mislukt.");
     }
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <SEO
-        title="Contact & Bestellen - Neem contact op met TABOULEH 2"
-        description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten."
-        type="website"
-        schemaMarkup={contactSchema}
-      />
+  return <div className="min-h-screen flex flex-col">
+      <SEO title="Contact & Bestellen - Neem contact op met TABOULEH 2" description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten." type="website" schemaMarkup={contactSchema} />
       <Navbar />
       <main className="flex-grow">
         <section className="bg-clay-50 py-12">
@@ -169,7 +154,7 @@ const Contact = () => {
                         <h4 className="text-lg font-medium text-gray-900">
                           E-mail
                         </h4>
-                        <p className="text-gray-600">hayder@tabouleh2.be</p>
+                        <p className="text-gray-600">info@tabouleh2.be</p>
                       </div>
                     </div>
                   </div>
@@ -185,84 +170,41 @@ const Contact = () => {
                   <form className="space-y-6" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label
-                          htmlFor="name"
-                          className="block text-sm font-medium text-gray-700 mb-1"
-                        >
+                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                           Naam
                         </label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                        />
+                        <input type="text" id="name" name="name" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                       </div>
                       <div>
-                        <label
-                          htmlFor="phone"
-                          className="block text-sm font-medium text-gray-700 mb-1"
-                        >
+                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                           Telefoon
                         </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                        />
+                        <input type="tel" id="phone" name="phone" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                       </div>
                     </div>
 
                     <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         E-mail
                       </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                      />
+                      <input type="email" id="email" name="email" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                     </div>
 
                     <div>
-                      <label
-                        htmlFor="subject"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
+                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                         Onderwerp
                       </label>
-                      <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                      />
+                      <input type="text" id="subject" name="subject" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
                     </div>
 
                     <div>
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                         Bericht
                       </label>
-                      <textarea
-                        id="message"
-                        rows={4}
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
-                        name="message"
-                      ></textarea>
+                      <textarea id="message" rows={4} className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" name="message"></textarea>
                     </div>
 
-                    <Button
-                      type="submit"
-                      className="w-full bg-spice-600 hover:bg-spice-700"
-                    >
+                    <Button type="submit" className="w-full bg-spice-600 hover:bg-spice-700">
                       Bericht Verzenden
                     </Button>
                   </form>
@@ -397,24 +339,14 @@ const Contact = () => {
               Bezoek Ons
             </h2>
             <div className="rounded-lg overflow-hidden shadow-md h-80">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.1599595358507!2d3.743396776992651!3d51.03905534750757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371451f8773c1%3A0x5a31aeefa4dccf27!2sLedebergplein%2017%2C%209050%20Gent!5e0!3m2!1sen!2sbe!4v1712325693546!5m2!1sen!2sbe"
-                width="100%"
-                height="100%"
-                style={{
-                  border: 0,
-                }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.1599595358507!2d3.743396776992651!3d51.03905534750757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371451f8773c1%3A0x5a31aeefa4dccf27!2sLedebergplein%2017%2C%209050%20Gent!5e0!3m2!1sen!2sbe!4v1712325693546!5m2!1sen!2sbe" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
