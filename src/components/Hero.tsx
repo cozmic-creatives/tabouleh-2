@@ -15,7 +15,34 @@ const Hero = () => {
 
   return (
     <div className="relative bg-clay-50 overflow-hidden decorative-border">
+      {/* Arabic Pattern Background */}
+      <div className="absolute inset-0">
+        <svg 
+          className="w-full h-full opacity-[0.03] text-spice-600"
+          xmlns="http://www.w3.org/2000/svg" 
+          width="100%" 
+          height="100%"
+        >
+          <pattern
+            id="arabicPattern"
+            x="0"
+            y="0"
+            width="56"
+            height="56"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              fill="currentColor"
+              d="M28 0c15.464 0 28 12.536 28 28S43.464 56 28 56 0 43.464 0 28 12.536 0 28 0zm0 4C14.745 4 4 14.745 4 28s10.745 24 24 24 24-10.745 24-24S41.255 4 28 4zm0 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S8 39.046 8 28 16.954 8 28 8zm0 4c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zm0 4c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12zm0 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 4a4 4 0 110 8 4 4 0 010-8z"
+            />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#arabicPattern)" />
+        </svg>
+      </div>
+      
+      {/* Original Arabic Pattern (keeping for layered effect) */}
       <div className="absolute inset-0 bg-pattern-arabic opacity-10"></div>
+      
       <div className="container-custom mx-auto relative">
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-24 gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">
@@ -81,4 +108,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;
