@@ -7,14 +7,6 @@ content:
     path: src/data/menuData.json
     type: file
     list: true
-    view:
-      fields: [ name ]
-      primary: name
-      sort: [ name ]
-      default:
-        search: ''
-        sort: name
-        order: desc
     format: json
     fields:
       - name: name
