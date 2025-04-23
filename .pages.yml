@@ -22,7 +22,9 @@ content:
         type: number
       - name: category
         label: Category
-        type: string
+        type: select
+        options:
+          values: [ BBQ Gerechten, Onze Gerechten, Mezze, Soepen, Sandwiches, Menu Combinaties, Dranken ]
       - name: popular
         label: Is popular
         type: boolean
