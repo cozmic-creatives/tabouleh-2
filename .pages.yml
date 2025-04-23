@@ -25,3 +25,5 @@ content:
       - name: image
         label: Item image
         type: image
+        options:
+          path: public/images/menu
