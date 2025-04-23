@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuItem as MenuItemType } from "@/data/menuData";
+import { MenuItemType } from "@/components/menu/MenuGrid";
 import { Badge } from "@/components/ui/badge";
 
 interface MenuItemProps {
@@ -31,6 +31,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
       "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
   };
 
+  // Format price with Euro sign and proper formatting
+  const formattedPrice = `€${item.price.toFixed(2).replace(".", ",")}`;
+
   // Use either the item's image, or the fallback if we have an error
   const imageToDisplay = hasImageError
     ? fallbackImages[item.category] ||
@@ -47,7 +50,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
           description: item.description,
           offers: {
             "@type": "Offer",
-            price: item.price.replace("€", ""),
+            price: item.price,
             priceCurrency: "EUR",
           },
           image: imageToDisplay,
@@ -67,7 +70,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
         <div className="flex justify-between items-start mb-1 gap-4">
           <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
           <span className="text-spice-600 font-bold border-spice-600">
-            {item.price}
+            {formattedPrice}
           </span>
         </div>
         <div className="flex flex-wrap gap-2 mb-2 mt-1">

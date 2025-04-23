@@ -1,40 +1,53 @@
-import React, { useState } from 'react';
-import { menuCategories, menuItems } from '@/data/menuData';
-import CategoryFilter from './menu/CategoryFilter';
-import PopularFilter from './menu/PopularFilter';
-import MenuGrid from './menu/MenuGrid';
-import { Badge } from '@/components/ui/badge';
+import React, { useState } from "react";
+import { menuCategories } from "@/data/constants";
+import menuItems from "@/data/menuData.json";
+import CategoryFilter from "./menu/CategoryFilter";
+import PopularFilter from "./menu/PopularFilter";
+import MenuGrid from "./menu/MenuGrid";
+
 const MenuList = () => {
-  const [activeCategory, setActiveCategory] = useState('Alle');
+  const [activeCategory, setActiveCategory] = useState("Alle");
   const [showPopular, setShowPopular] = useState(false);
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
   const handleImageError = (itemId: number) => {
-    setImageErrors(prev => ({
+    setImageErrors((prev) => ({
       ...prev,
-      [itemId]: true
+      [itemId]: true,
     }));
   };
-  const filteredItems = menuItems.filter(item => {
-    const categoryMatch = activeCategory === 'Alle' || item.category === activeCategory;
+  const filteredItems = menuItems.filter((item) => {
+    const categoryMatch =
+      activeCategory === "Alle" || item.category === activeCategory;
     const popularMatch = showPopular ? item.popular : true;
     return categoryMatch && popularMatch;
   });
-  return <div className="container-custom mx-auto py-8">
+  return (
+    <div className="container-custom mx-auto py-8">
       <div className="flex flex-col gap-3">
         <div className="flex items-center justify-between flex-wrap">
-          <CategoryFilter categories={menuCategories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
-          
-          
+          <CategoryFilter
+            categories={menuCategories}
+            activeCategory={activeCategory}
+            setActiveCategory={setActiveCategory}
+          />
         </div>
-        
+
         <div>
-          <PopularFilter showPopular={showPopular} setShowPopular={setShowPopular} />
+          <PopularFilter
+            showPopular={showPopular}
+            setShowPopular={setShowPopular}
+          />
         </div>
       </div>
-      
+
       <div className="mt-8">
-        <MenuGrid items={filteredItems} imageErrors={imageErrors} onImageError={handleImageError} />
+        <MenuGrid
+          items={filteredItems}
+          imageErrors={imageErrors}
+          onImageError={handleImageError}
+        />
       </div>
-    </div>;
+    </div>
+  );
 };
 export default MenuList;
