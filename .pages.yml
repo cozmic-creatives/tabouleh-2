@@ -1,7 +1,7 @@
 media:
-  input: publi/images/menu
-  output: /publi/images/menu
-  path: publi/images/menu
+  input: public/images/menu
+  output: /public/images/menu
+  path: public/images/menu
   label: Menu photos
 content:
   - name: menu-items
@@ -27,5 +27,3 @@ content:
       - name: image
         label: Item image
         type: image
-        options:
-          path: publi/images/menu
