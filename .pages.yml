@@ -1,0 +1,25 @@
+media:
+  input: public/images
+  output: public/images
+content:
+  - name: menu-items
+    label: Menu Items
+    path: src/data/menuData.ts
+    type: file
+    fields:
+      - name: title
+        label: Item title
+        type: string
+      - name: description
+        label: Item description
+        type: string
+        description: Will be provused for any page with no description.
+      - name: price
+        label: Item price
+        type: string
+      - name: popular
+        label: Is popular
+        type: boolean
+      - name: image
+        label: Item image
+        type: image
