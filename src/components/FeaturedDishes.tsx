@@ -1,36 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const featuredDishes = [
-  {
-    id: 1,
-    name: "Mix Grilled",
-    description:
-      "Lam brochette, gehakt, kipfilet (met rijst, bulgur met tomatensaus of friet).",
-    price: "€18,00",
-    image:
-      "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "BBQ Gerecht",
-  },
-  {
-    id: 2,
-    name: "Tabouleh",
-    description: "Gehakte peterselie, tomaten, munt, met uien, bulgur.",
-    price: "€7,50",
-    image:
-      "https://images.unsplash.com/photo-1605709239047-824038e4d49b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Mezze",
-  },
-  {
-    id: 3,
-    name: "Quzi",
-    description:
-      "Lamspotje met rijst en 3 soepen (okra met tomatensaus, bonen met tomatensaus, aubergine met tomatensaus).",
-    price: "€18,00",
-    image:
-      "https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Hoofdgerecht",
-  },
-];
+import menuData from "../data/menuData.json";
+import { processImagePath } from "@/utils/image";
+// Get the first 3 popular dishes from menuData
+const featuredDishes = menuData
+  .filter((dish) => dish.popular)
+  .slice(0, 3)
+  .map((dish) => ({
+    id: dish.id,
+    name: dish.name,
+    description: dish.description,
+    price: `€${dish.price.toFixed(2)}`,
+    image: processImagePath(dish.image),
+    category: dish.category,
+  }));
+
 const FeaturedDishes = () => {
   return (
     <section className="section-padding bg-white">
@@ -49,9 +33,9 @@ const FeaturedDishes = () => {
           {featuredDishes.map((dish) => (
             <div
               key={dish.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full"
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full border border-spice-300"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden bg-gradient-to-br from-saffron-100 via-spice-100 to-amber-200">
                 <img
                   src={dish.image}
                   alt={dish.name}

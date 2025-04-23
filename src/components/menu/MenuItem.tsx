@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItemType } from "@/components/menu/MenuGrid";
 import { Badge } from "@/components/ui/badge";
-
+import { processImagePath } from "@/utils/image";
 interface MenuItemProps {
   item: MenuItemType;
   hasImageError?: boolean;
@@ -33,11 +33,6 @@ const MenuItem: React.FC<MenuItemProps> = ({
 
   // Format price with Euro sign and proper formatting
   const formattedPrice = `€${item.price.toFixed(2).replace(".", ",")}`;
-
-  // Process image path to remove "/public" prefix if present
-  const processImagePath = (path: string): string => {
-    return path.replace(/^\/public/, "");
-  };
 
   // Use either the item's image, or the fallback if we have an error
   const imageToDisplay = hasImageError
