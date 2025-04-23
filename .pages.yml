@@ -28,4 +28,4 @@ content:
         label: Item image
         type: image
         options:
-          path: public/images/menu
+          path: publi/images/menu
