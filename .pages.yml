@@ -1,6 +1,6 @@
 media:
-  input: public/images
-  output: /public/images
+  input: public/images/menu
+  output: /public/images/menu
 content:
   - name: menu-items
     label: Menu Items
