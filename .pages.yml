@@ -4,7 +4,7 @@ media:
 content:
   - name: menu-items
     label: Menu Items
-    path: src/data/menuData.ts
+    path: src/data/menuData.json
     type: file
     fields:
       - name: title
