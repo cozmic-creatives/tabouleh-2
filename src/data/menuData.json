@@ -1,6 +1,21 @@
-{
-  "title": "frw",
-  "description": "frw",
-  "price": 32,
-  "popular": true
-}
+[
+  {
+    "title": "fer",
+    "description": "fre",
+    "price": 32,
+    "popular": true
+  },
+  {
+    "title": "fre",
+    "description": "fre",
+    "price": 231,
+    "popular": true
+  },
+  {
+    "title": "fref",
+    "description": "fre",
+    "price": 231,
+    "popular": false,
+    "image": "/public/images/menu/mousaka-1.png"
+  }
+]
