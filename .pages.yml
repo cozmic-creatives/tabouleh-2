@@ -16,7 +16,7 @@ content:
         description: Will be provused for any page with no description.
       - name: price
         label: Item price
-        type: string
+        type: number
       - name: popular
         label: Is popular
         type: boolean
