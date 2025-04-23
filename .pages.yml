@@ -5,7 +5,7 @@ content:
   - name: menu-items
     label: Menu Items
     path: src/data/menuData.json
-    type: file
+    type: collection
     list: true
     view:
       fields: [ name ]
