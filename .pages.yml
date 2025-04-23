@@ -30,7 +30,7 @@ content:
         type: boolean
       - name: serves
         label: Serves
-        type: number
+        type: string
       - name: image
         label: Image
         type: image
