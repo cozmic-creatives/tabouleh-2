@@ -22,7 +22,7 @@ content:
         type: number
       - name: category
         label: Category
-        type: image
+        type: string
       - name: popular
         label: Is popular
         type: boolean
