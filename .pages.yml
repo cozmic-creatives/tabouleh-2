@@ -1,6 +1,6 @@
 media:
-  input: public/images/menu
-  output: /public/images/menu
+  input: publi/images/menu
+  output: /publi/images/menu
   path: publi/images/menu
   label: Menu photos
 content:
