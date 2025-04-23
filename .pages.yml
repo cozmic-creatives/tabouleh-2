@@ -6,6 +6,7 @@ content:
     label: Menu Items
     path: src/data/menuData.json
     type: file
+    list: true
     format: json
     fields:
       - name: title
