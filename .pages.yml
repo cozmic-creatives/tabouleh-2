@@ -11,18 +11,24 @@ content:
     format: json
     fields:
       - name: name
-        label: Item name
+        label: Name
         type: string
       - name: description
-        label: Item description
+        label: Description
         type: string
         description: Will be provused for any page with no description.
       - name: price
-        label: Item price
+        label: Price
         type: number
+      - name: category
+        label: Category
+        type: image
       - name: popular
         label: Is popular
         type: boolean
+      - name: serves
+        label: Serves
+        type: number
       - name: image
-        label: Item image
+        label: Image
         type: image
