@@ -1,7 +1,7 @@
 media:
-  input: public/images/menu
-  output: /public/images/menu
-  path: public/images/menu
+  input: src/assets/images/menu
+  output: /src/assets/images/menu
+  path: src/assets/images/menu
   label: Menu photos
 content:
   - name: menu-items
