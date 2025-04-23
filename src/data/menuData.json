@@ -6,7 +6,7 @@
     "price": 45.0,
     "category": "BBQ Gerechten",
     "popular": true,
-    "image": "src/assets/images/menu/1kg-grill-mix.png",
+    "image": "/public/images/menu/1kg-grill-mix.png",
     "serves": 4
   },
   {
@@ -16,7 +16,7 @@
     "price": 18.0,
     "category": "BBQ Gerechten",
     "popular": true,
-    "image": "src/assets/images/menu/mix-grill.png"
+    "image": "/public/images/menu/mix-grill.png"
   },
   {
     "id": 3,
@@ -25,7 +25,7 @@
     "price": 16.0,
     "category": "BBQ Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/lam-en-kebab.png"
+    "image": "/public/images/menu/lam-en-kebab.png"
   },
   {
     "id": 4,
@@ -34,7 +34,7 @@
     "price": 16.0,
     "category": "BBQ Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/shish-kebab.png"
+    "image": "/public/images/menu/shish-kebab.png"
   },
   {
     "id": 5,
@@ -43,7 +43,7 @@
     "price": 16.0,
     "category": "BBQ Gerechten",
     "popular": true,
-    "image": "src/assets/images/menu/shish-taouk.png"
+    "image": "/public/images/menu/shish-taouk.png"
   },
   {
     "id": 6,
@@ -52,7 +52,7 @@
     "price": 17.0,
     "category": "BBQ Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/lahme-mishwy.png"
+    "image": "/public/images/menu/lahme-mishwy.png"
   },
   {
     "id": 7,
@@ -61,7 +61,7 @@
     "price": 18.0,
     "category": "Onze Gerechten",
     "popular": true,
-    "image": "src/assets/images/menu/quzi.png",
+    "image": "/public/images/menu/quzi.png",
     "serves": 1
   },
   {
@@ -71,7 +71,7 @@
     "price": 16.0,
     "category": "Onze Gerechten",
     "popular": true,
-    "image": "src/assets/images/menu/tashrip-lahem.png"
+    "image": "/public/images/menu/tashrip-lahem.png"
   },
   {
     "id": 9,
@@ -80,7 +80,7 @@
     "price": 10.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/rijst-met-soep.png"
+    "image": "/public/images/menu/rijst-met-soep.png"
   },
   {
     "id": 10,
@@ -89,7 +89,7 @@
     "price": 15.0,
     "category": "Onze Gerechten",
     "popular": true,
-    "image": "src/assets/images/menu/dolma.png"
+    "image": "/public/images/menu/dolma.png"
   },
   {
     "id": 11,
@@ -98,7 +98,7 @@
     "price": 16.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/shish-taouk-kebab.png"
+    "image": "/public/images/menu/shish-taouk-kebab.png"
   },
   {
     "id": 12,
@@ -107,7 +107,7 @@
     "price": 13.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/half-kip.png"
+    "image": "/public/images/menu/half-kip.png"
   },
   {
     "id": 13,
@@ -116,7 +116,7 @@
     "price": 18.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/cotelette.png"
+    "image": "/public/images/menu/cotelette.png"
   },
   {
     "id": 14,
@@ -125,7 +125,7 @@
     "price": 15.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/zalm.png"
+    "image": "/public/images/menu/zalm.png"
   },
   {
     "id": 15,
@@ -134,7 +134,7 @@
     "price": 13.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/kippenvleugels.png"
+    "image": "/public/images/menu/kippenvleugels.png"
   },
   {
     "id": 16,
@@ -143,7 +143,7 @@
     "price": 8.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/kibbeh.png"
+    "image": "/public/images/menu/kibbeh.png"
   },
   {
     "id": 17,
@@ -152,7 +152,7 @@
     "price": 10.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/shish-taouk-2.png"
+    "image": "/public/images/menu/shish-taouk-2.png"
   },
   {
     "id": 18,
@@ -161,7 +161,7 @@
     "price": 10.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/shish-kebab.png"
+    "image": "/public/images/menu/shish-kebab.png"
   },
   {
     "id": 19,
@@ -170,7 +170,7 @@
     "price": 10.0,
     "category": "Onze Gerechten",
     "popular": false,
-    "image": "src/assets/images/menu/lam-bbq.png"
+    "image": "/public/images/menu/lam-bbq.png"
   },
   {
     "id": 20,
@@ -179,7 +179,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/chicken-nuggets.png"
+    "image": "/public/images/menu/chicken-nuggets.png"
   },
   {
     "id": 21,
@@ -188,7 +188,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/burger.png"
+    "image": "/public/images/menu/burger.png"
   },
   {
     "id": 22,
@@ -197,7 +197,7 @@
     "price": 3.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/friet-klein.png"
+    "image": "/public/images/menu/friet-klein.png"
   },
   {
     "id": 23,
@@ -206,7 +206,7 @@
     "price": 5.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/friet-medium.png"
+    "image": "/public/images/menu/friet-medium.png"
   },
   {
     "id": 24,
@@ -215,7 +215,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/friet-groot.png"
+    "image": "/public/images/menu/friet-groot.png"
   },
   {
     "id": 25,
@@ -224,7 +224,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/mousaka.png"
+    "image": "/public/images/menu/mousaka.png"
   },
   {
     "id": 26,
@@ -233,7 +233,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/foul.png"
+    "image": "/public/images/menu/foul.png"
   },
   {
     "id": 27,
@@ -242,7 +242,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/labneh.png"
+    "image": "/public/images/menu/labneh.png"
   },
   {
     "id": 28,
@@ -251,7 +251,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": true,
-    "image": "src/assets/images/menu/hummus-2.png"
+    "image": "/public/images/menu/hummus-2.png"
   },
   {
     "id": 29,
@@ -260,7 +260,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/haloumi-brood.png"
+    "image": "/public/images/menu/haloumi-brood.png"
   },
   {
     "id": 30,
@@ -269,7 +269,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/haloumi.png"
+    "image": "/public/images/menu/haloumi.png"
   },
   {
     "id": 31,
@@ -278,7 +278,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": true,
-    "image": "src/assets/images/menu/falafel.png"
+    "image": "/public/images/menu/falafel.png"
   },
   {
     "id": 32,
@@ -287,7 +287,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": true,
-    "image": "src/assets/images/menu/hummus.png"
+    "image": "/public/images/menu/hummus.png"
   },
   {
     "id": 33,
@@ -296,7 +296,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/mettabal.png"
+    "image": "/public/images/menu/mettabal.png"
   },
   {
     "id": 34,
@@ -305,7 +305,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/waark-enab.png"
+    "image": "/public/images/menu/waark-enab.png"
   },
   {
     "id": 35,
@@ -314,7 +314,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/fattoush.png"
+    "image": "/public/images/menu/fattoush.png"
   },
   {
     "id": 36,
@@ -323,7 +323,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/baba-ganouj.png"
+    "image": "/public/images/menu/baba-ganouj.png"
   },
   {
     "id": 37,
@@ -332,7 +332,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/bulgar-tomatensaus.png"
+    "image": "/public/images/menu/bulgar-tomatensaus.png"
   },
   {
     "id": 38,
@@ -341,7 +341,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/byriane.png"
+    "image": "/public/images/menu/byriane.png"
   },
   {
     "id": 39,
@@ -350,7 +350,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/batata-hara.png"
+    "image": "/public/images/menu/batata-hara.png"
   },
   {
     "id": 40,
@@ -359,7 +359,7 @@
     "price": 7.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/makali.png"
+    "image": "/public/images/menu/makali.png"
   },
   {
     "id": 41,
@@ -368,7 +368,7 @@
     "price": 7.5,
     "category": "Mezze",
     "popular": true,
-    "image": "src/assets/images/menu/tabouleh.png"
+    "image": "/public/images/menu/tabouleh.png"
   },
   {
     "id": 42,
@@ -377,7 +377,7 @@
     "price": 6.0,
     "category": "Mezze",
     "popular": false,
-    "image": "src/assets/images/menu/burak.png"
+    "image": "/public/images/menu/burak.png"
   },
   {
     "id": 43,
@@ -386,7 +386,7 @@
     "price": 5.0,
     "category": "Soepen",
     "popular": false,
-    "image": "src/assets/images/menu/okra-soep.png"
+    "image": "/public/images/menu/okra-soep.png"
   },
   {
     "id": 44,
@@ -395,7 +395,7 @@
     "price": 5.0,
     "category": "Soepen",
     "popular": false,
-    "image": "src/assets/images/menu/bonen-soep.png"
+    "image": "/public/images/menu/bonen-soep.png"
   },
   {
     "id": 45,
@@ -404,7 +404,7 @@
     "price": 5.0,
     "category": "Soepen",
     "popular": false,
-    "image": "src/assets/images/menu/aubergine-soep.png"
+    "image": "/public/images/menu/aubergine-soep.png"
   },
   {
     "id": 46,
@@ -413,7 +413,7 @@
     "price": 6.0,
     "category": "Sandwiches",
     "popular": false,
-    "image": "src/assets/images/menu/falafel-wrap.png"
+    "image": "/public/images/menu/falafel-wrap.png"
   },
   {
     "id": 47,
@@ -422,7 +422,7 @@
     "price": 7.5,
     "category": "Sandwiches",
     "popular": true,
-    "image": "src/assets/images/menu/shoarma.png"
+    "image": "/public/images/menu/shoarma.png"
   },
   {
     "id": 48,
@@ -431,7 +431,7 @@
     "price": 7.5,
     "category": "Sandwiches",
     "popular": false,
-    "image": "src/assets/images/menu/shish-taouk.png"
+    "image": "/public/images/menu/shish-taouk.png"
   },
   {
     "id": 49,
@@ -440,7 +440,7 @@
     "price": 7.5,
     "category": "Sandwiches",
     "popular": false,
-    "image": "src/assets/images/menu/kufta.png"
+    "image": "/public/images/menu/kufta.png"
   },
   {
     "id": 50,
@@ -449,7 +449,7 @@
     "price": 7.5,
     "category": "Sandwiches",
     "popular": false,
-    "image": "src/assets/images/menu/vlees.png"
+    "image": "/public/images/menu/vlees.png"
   },
   {
     "id": 51,
@@ -458,7 +458,7 @@
     "price": 12.0,
     "category": "Sandwiches",
     "popular": false,
-    "image": "src/assets/images/menu/marine.png"
+    "image": "/public/images/menu/marine.png"
   },
   {
     "id": 52,
@@ -467,7 +467,7 @@
     "price": 65.0,
     "category": "Menu Combinaties",
     "popular": true,
-    "image": "src/assets/images/menu/menu-tabouleh.png",
+    "image": "/public/images/menu/menu-tabouleh.png",
     "serves": "4-5"
   },
   {
@@ -477,7 +477,7 @@
     "price": 14.0,
     "category": "Menu Combinaties",
     "popular": false,
-    "image": "src/assets/images/menu/menu-vegatarisch.png",
+    "image": "/public/images/menu/menu-vegatarisch.png",
     "serves": 1
   },
   {
@@ -487,7 +487,7 @@
     "price": 12.0,
     "category": "Menu Combinaties",
     "popular": true,
-    "image": "src/assets/images/menu/schotel-schwerma.png",
+    "image": "/public/images/menu/schotel-schwerma.png",
     "serves": 1
   },
   {
@@ -497,7 +497,7 @@
     "price": 12.0,
     "category": "Menu Combinaties",
     "popular": false,
-    "image": "src/assets/images/menu/schotel-schwerma-2.png",
+    "image": "/public/images/menu/schotel-schwerma-2.png",
     "serves": 1
   },
   {
@@ -507,7 +507,7 @@
     "price": 2.5,
     "category": "Dranken",
     "popular": false,
-    "image": "src/assets/images/menu/ayran.jpg"
+    "image": "/public/images/menu/ayran.jpg"
   },
   {
     "id": 57,
@@ -516,6 +516,6 @@
     "price": 2.5,
     "category": "Dranken",
     "popular": false,
-    "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    "image": "https://public/images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   }
 ]

@@ -34,11 +34,16 @@ const MenuItem: React.FC<MenuItemProps> = ({
   // Format price with Euro sign and proper formatting
   const formattedPrice = `€${item.price.toFixed(2).replace(".", ",")}`;
 
+  // Process image path to remove "/public" prefix if present
+  const processImagePath = (path: string): string => {
+    return path.replace(/^\/public/, "");
+  };
+
   // Use either the item's image, or the fallback if we have an error
   const imageToDisplay = hasImageError
     ? fallbackImages[item.category] ||
       "https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    : item.image;
+    : processImagePath(item.image);
   return (
     <div className="flex bg-white rounded-lg shadow-md overflow-hidden border border-spice-300">
       {/* JSON-LD structured data for this menu item */}
@@ -53,7 +58,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             price: item.price,
             priceCurrency: "EUR",
           },
-          image: imageToDisplay,
+          image: processImagePath(imageToDisplay),
         })}
       </script>
 
