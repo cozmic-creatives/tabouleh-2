@@ -1,8 +1,8 @@
 media:
-  input: ./public/images/menu
-  output: ./public/images/menu
+  input: public/images/menu
+  output: /public/images/menu
   path: public/images/menu
-  label: Menu items
+  label: Menu photos
 content:
   - name: menu-items
     label: Menu Items
