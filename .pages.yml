@@ -1,7 +1,7 @@
 media:
   input: public/images/menu
   output: /public/images/menu
-  path: public/images/menu
+  path: publi/images/menu
   label: Menu photos
 content:
   - name: menu-items
