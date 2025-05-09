@@ -1,5 +1,4 @@
-
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Star } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,6 +8,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 interface Review {
@@ -72,31 +72,27 @@ const reviews: Review[] = [
 ];
 
 const ClientReviewsCarousel = () => {
-  const carouselRef = useRef<HTMLDivElement>(null);
+  const [api, setApi] = useState<CarouselApi>();
+  const intervalRef = useRef<number | null>(null);
   
-  // Set up auto-scroll animation
   useEffect(() => {
-    let intervalId: number;
+    if (!api) return;
     
-    if (carouselRef.current) {
-      const carousel = carouselRef.current;
-      intervalId = window.setInterval(() => {
-        const nextButton = carousel.querySelector('[aria-label="Next slide"]') as HTMLButtonElement;
-        if (nextButton) {
-          nextButton.click();
-        }
-      }, 5000); // Change slide every 5 seconds
-    }
+    // Start autoplay when component mounts and api is available
+    intervalRef.current = window.setInterval(() => {
+      api.scrollNext();
+    }, 5000);
     
+    // Clean up interval on unmount
     return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
+      if (intervalRef.current !== null) {
+        window.clearInterval(intervalRef.current);
       }
     };
-  }, []);
+  }, [api]);
 
   return (
-    <div className="relative w-full overflow-hidden" ref={carouselRef}>
+    <div className="relative w-full overflow-hidden">
       {/* Left gradient fade */}
       <div className="absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-clay-50 to-transparent pointer-events-none" />
       
@@ -107,6 +103,7 @@ const ClientReviewsCarousel = () => {
           dragFree: true,
           containScroll: "trimSnaps",
         }}
+        setApi={setApi}
         className="w-full"
       >
         <CarouselContent className="-ml-4">
