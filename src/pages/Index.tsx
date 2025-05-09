@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -6,6 +7,7 @@ import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import OrderButton from '@/components/OrderButton';
 import SEO from '@/components/SEO';
+import ClientReviewsSection from '@/components/ClientReviewsSection';
 
 const Index = () => {
   // Schema markup specific to the homepage
@@ -26,6 +28,9 @@ const Index = () => {
         <Hero />
         <FeaturedDishes />
         <AboutSection />
+        
+        {/* Client Reviews Section */}
+        <ClientReviewsSection />
         
         <section className="py-16 bg-spice-600 text-white text-center">
           <div className="container-custom mx-auto">
