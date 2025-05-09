@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock, Utensils } from "lucide-react";
-import ClientReviewsCarousel from "@/components/ClientReviewsCarousel";
 import SEO from "@/components/SEO";
 
 const Contact = () => {
@@ -213,17 +212,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section - Updated to use the carousel */}
-        <section className="py-12 bg-clay-50">
-          <div className="container-custom mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Wat Onze Klanten Zeggen
-            </h2>
-            
-            <ClientReviewsCarousel />
           </div>
         </section>
 
