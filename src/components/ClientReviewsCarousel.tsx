@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import { Star } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -21,53 +22,46 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    name: "Hassan Khaled",
-    initials: "HK",
-    content: "Top lekker etentje ik heb juist gepakt tashrip was top lekker",
+    name: "Cindy Van den Abeele",
+    initials: "CV",
+    content: "Super lekker",
     rating: 5,
-    timeAgo: "Een week geleden"
+    timeAgo: "Een dag geleden"
   },
   {
-    name: "Aboudi Alfadhil",
-    initials: "AA",
-    content: "Het was heerlijk, de service top en de medewerkers super vriendelijk. Ik kom zonder twijfel terug!",
+    name: "Sonia Boufennara",
+    initials: "SB",
+    content: "Heel eten en fijne service. Sfeervol restaurant",
     rating: 5,
-    timeAgo: "Een week geleden"
+    timeAgo: "Drie weken geleden"
   },
   {
-    name: "Omer Aljbory",
-    initials: "OA",
-    content: "Very tasty and good service thanks alot 🌹",
+    name: "Nina Sarens",
+    initials: "NS",
+    content: "Lekker eten, scherpe prijzen!",
     rating: 5,
-    timeAgo: "Een week geleden"
+    timeAgo: "Vier dagen geleden"
   },
   {
-    name: "Ahmed Rzgar",
-    initials: "AR",
-    content: "Very delicious, Thanks!",
-    rating: 5,
-    timeAgo: "Een week geleden"
-  },
-  {
-    name: "Sara Mahmoud",
-    initials: "SM",
-    content: "De beste Syrische keuken in Gent! De hummus is perfect bereid, zeker een aanrader!",
+    name: "X O",
+    initials: "XO",
+    content: "Heelijk, super schoon, vriendelijkeheid en de service was top 10/10.",
     rating: 5,
     timeAgo: "Twee weken geleden"
   },
   {
-    name: "Mohammed Ali",
-    initials: "MA",
-    content: "Authentieke smaken die me terugbrengen naar Damascus. Geweldig eten en sfeer!",
-    rating: 5,
-    timeAgo: "Een maand geleden"
-  },
-  {
-    name: "Lisa Verbeeck",
-    initials: "LV",
-    content: "Heerlijk gegeten met vrienden, de mix grill was fantastisch en de bediening zeer vriendelijk!",
+    name: "Joy Brabant",
+    initials: "JB",
+    content: "Heerlijke gerechten en super vriendelijke mensen !",
     rating: 5,
     timeAgo: "Drie weken geleden"
+  },
+  {
+    name: "Omer Aljbory",
+    initials: "OA",
+    content: "very tasty and good service thanks alot 🌹",
+    rating: 5,
+    timeAgo: "Een maand geleden"
   }
 ];
 
