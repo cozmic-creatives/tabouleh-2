@@ -91,8 +91,10 @@ const ClientReviewsCarousel = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="relative w-full overflow-hidden mb-6">
-        {/* Left gradient fade */}
-        <div className="absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-clay-50 to-transparent pointer-events-none" />
+        {/* Left gradient fade - only show on non-mobile */}
+        {!isMobile && (
+          <div className="absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-clay-50 to-transparent pointer-events-none" />
+        )}
         
         <Carousel
           opts={{
@@ -138,8 +140,10 @@ const ClientReviewsCarousel = () => {
           </div>
         </Carousel>
         
-        {/* Right gradient fade */}
-        <div className="absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-clay-50 to-transparent pointer-events-none" />
+        {/* Right gradient fade - only show on non-mobile */}
+        {!isMobile && (
+          <div className="absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-clay-50 to-transparent pointer-events-none" />
+        )}
       </div>
       
       {/* Link to Google Maps reviews */}
