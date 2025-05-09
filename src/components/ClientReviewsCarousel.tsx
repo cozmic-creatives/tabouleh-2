@@ -12,6 +12,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Review {
   name: string;
@@ -69,6 +70,7 @@ const reviews: Review[] = [
 const ClientReviewsCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
   const intervalRef = useRef<number | null>(null);
+  const isMobile = useIsMobile();
   
   useEffect(() => {
     if (!api) return;
@@ -104,7 +106,7 @@ const ClientReviewsCarousel = () => {
         >
           <CarouselContent className="-ml-4">
             {reviews.map((review, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                 <Card className="h-full border border-clay-200 transition-all duration-500 hover:shadow-md">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
