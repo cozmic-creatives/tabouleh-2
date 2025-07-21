@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock, Utensils } from "lucide-react";
 import SEO from "@/components/SEO";
+import { websiteEmail, websiteEmailDisplay } from "@/constants/config";
 
 const Contact = () => {
   const contactSchema = {
@@ -21,36 +22,6 @@ const Contact = () => {
     }
   };
   
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      subject: formData.get("subject"),
-      message: formData.get("message")
-    };
-    try {
-      const response = await fetch("https://n8n.matthewbracke.com/webhook/contact-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
-      if (response.ok) {
-        alert("Bericht verzonden! We nemen snel contact met je op.");
-        form.reset();
-      } else {
-        alert("Er is iets misgegaan. Probeer het opnieuw.");
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
-      alert("Verzenden mislukt.");
-    }
-  };
   
   return <div className="min-h-screen flex flex-col">
       <SEO title="Contact & Bestellen - Neem contact op met TABOULEH 2" description="Klaar om te genieten van authentieke Syrische keuken? Bestel telefonisch, online of bezoek ons restaurant in Gent. Wij bieden afhalen, bezorging en dine-in opties voor onze gasten." type="website" schemaMarkup={contactSchema} />
@@ -155,7 +126,7 @@ const Contact = () => {
                         <h4 className="text-lg font-medium text-gray-900">
                           E-mail
                         </h4>
-                        <p className="text-gray-600">info@tabouleh2.be</p>
+                        <p className="text-gray-600">{websiteEmailDisplay}</p>
                       </div>
                     </div>
                   </div>
@@ -168,7 +139,13 @@ const Contact = () => {
                 </h2>
 
                 <div className="bg-white rounded-lg shadow-md p-6">
-                  <form className="space-y-6" onSubmit={handleSubmit}>
+                  <form className="space-y-6" action={`https://formsubmit.co/${websiteEmail}`} method="POST">
+                    {/* FormSubmit configuration */}
+                    <input type="hidden" name="_replyto" />
+                    <input type="hidden" name="_next" value="/contact" />
+                    <input type="hidden" name="_subject" value="Form submit from website" />
+                    <input type="hidden" name="_autoresponse" value="Bedankt voor uw boodschap we zullen direct antwoorden!" />
+                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -188,7 +165,16 @@ const Contact = () => {
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         E-mail
                       </label>
-                      <input type="email" id="email" name="email" className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border" />
+                      <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-spice-500 focus:ring-spice-500 px-3 py-2 border"
+                        onChange={(e) => {
+                          const replytoField = document.querySelector('input[name="_replyto"]') as HTMLInputElement;
+                          if (replytoField) replytoField.value = e.target.value;
+                        }}
+                      />
                     </div>
 
                     <div>
