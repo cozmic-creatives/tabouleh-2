@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Star } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -112,11 +111,9 @@ const ClientReviewsCarousel = () => {
                 <Card className="h-full border border-clay-200 transition-all duration-500 hover:shadow-md">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Avatar className="h-10 w-10 mr-3">
-                        <AvatarFallback className="bg-spice-100 text-spice-600">
-                          {review.initials}
-                        </AvatarFallback>
-                      </Avatar>
+                      <div className="h-10 w-10 mr-3 bg-spice-100 text-spice-600 rounded-full flex items-center justify-center text-sm font-medium">
+                        {review.initials}
+                      </div>
                       <div>
                         <p className="font-medium">{review.name}</p>
                         <div className="flex text-amber-500">
@@ -135,8 +132,8 @@ const ClientReviewsCarousel = () => {
           </CarouselContent>
           
           <div className="hidden md:block">
-            <CarouselPrevious className="left-2 bg-white" />
-            <CarouselNext className="right-2 bg-white" />
+            <CarouselPrevious className="left-2 bg-white z-20 shadow-lg" />
+            <CarouselNext className="right-2 bg-white z-20 shadow-lg" />
           </div>
         </Carousel>
         

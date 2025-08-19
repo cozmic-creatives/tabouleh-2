@@ -1,104 +1,267 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Scheherazade+New:wght@400;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+@theme {
+  --font-sans: Inter, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-arabic: "Scheherazade New", serif;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+  --color-spice-50: #FDF5EF;
+  --color-spice-100: #FAEAD9;
+  --color-spice-200: #F5D0B3;
+  --color-spice-300: #EFB78D;
+  --color-spice-400: #E99D67;
+  --color-spice-500: #E38341;
+  --color-spice-600: #C96830;
+  --color-spice-700: #A85227;
+  --color-spice-800: #86411F;
+  --color-spice-900: #6D3519;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
+  --color-olive-50: #F7F9F3;
+  --color-olive-100: #EFF2E6;
+  --color-olive-200: #D8E0C8;
+  --color-olive-300: #BDCAA6;
+  --color-olive-400: #A3B585;
+  --color-olive-500: #869F63;
+  --color-olive-600: #6B8048;
+  --color-olive-700: #536138;
+  --color-olive-800: #3F492A;
+  --color-olive-900: #2F3720;
 
-    --primary: 24 9.8% 10%;
-    --primary-foreground: 60 9.1% 97.8%;
+  --color-saffron-50: #FFFDF5;
+  --color-saffron-100: #FFFBE6;
+  --color-saffron-200: #FFF5BF;
+  --color-saffron-300: #FFEE99;
+  --color-saffron-400: #FFE670;
+  --color-saffron-500: #FFDC3F;
+  --color-saffron-600: #F7CA00;
+  --color-saffron-700: #C5A100;
+  --color-saffron-800: #937A00;
+  --color-saffron-900: #766200;
 
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
+  --color-clay-50: #FBFAF8;
+  --color-clay-100: #F6F4F0;
+  --color-clay-200: #EBE6DB;
+  --color-clay-300: #DDD4C5;
+  --color-clay-400: #CCBFA9;
+  --color-clay-500: #BAA88C;
+  --color-clay-600: #A89274;
+  --color-clay-700: #8C7A60;
+  --color-clay-800: #70624C;
+  --color-clay-900: #5C503F;
 
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
+  --color-turquoise-50: #F0FDFA;
+  --color-turquoise-100: #CCFBF1;
+  --color-turquoise-200: #99F6E4;
+  --color-turquoise-300: #5EEAD4;
+  --color-turquoise-400: #2DD4BF;
+  --color-turquoise-500: #14B8A6;
+  --color-turquoise-600: #0D9488;
+  --color-turquoise-700: #0F766E;
+  --color-turquoise-800: #115E59;
+  --color-turquoise-900: #134E4A;
 
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
+  --color-henna-50: #FFF1F0;
+  --color-henna-100: #FFE2DF;
+  --color-henna-200: #FFC5BF;
+  --color-henna-300: #FFA49E;
+  --color-henna-400: #FF7A71;
+  --color-henna-500: #FF5449;
+  --color-henna-600: #ED3C32;
+  --color-henna-700: #C52A22;
+  --color-henna-800: #9E211B;
+  --color-henna-900: #7E1D18;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
+  /* Missing colors from old config */
+  --color-spice-400: #E99D67;
+  --color-spice-900: #6D3519;
+  --color-olive-50: #F7F9F3;
+  --color-olive-200: #D8E0C8;
+  --color-olive-300: #BDCAA6;
+  --color-olive-400: #A3B585;
+  --color-olive-500: #869F63;
+  --color-olive-700: #536138;
+  --color-olive-900: #2F3720;
+  --color-saffron-300: #FFEE99;
+  --color-saffron-600: #F7CA00;
+  --color-saffron-700: #C5A100;
+  --color-saffron-900: #766200;
+  --color-clay-400: #CCBFA9;
+  --color-clay-500: #BAA88C;
+  --color-clay-600: #A89274;
+  --color-clay-700: #8C7A60;
+  --color-turquoise-50: #F0FDFA;
+  --color-turquoise-100: #CCFBF1;
+  --color-turquoise-200: #99F6E4;
+  --color-turquoise-300: #5EEAD4;
+  --color-turquoise-400: #2DD4BF;
+  --color-turquoise-500: #14B8A6;
+  --color-turquoise-600: #0D9488;
+  --color-turquoise-700: #0F766E;
+  --color-turquoise-800: #115E59;
+  --color-turquoise-900: #134E4A;
+  --color-henna-50: #FFF1F0;
+  --color-henna-100: #FFE2DF;
+  --color-henna-200: #FFC5BF;
+  --color-henna-300: #FFA49E;
 
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 24 9.8% 10%;
+  /* Container sizes - wider containers for better spacing */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1400px;
 
-    --radius: 0.5rem;
+  /* Border radius variables */
+  --radius: 0.5rem;
+
+  /* Keyframes for animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.container-custom {
+  @apply w-full mx-auto px-8 
+         sm:max-w-screen-sm 
+         md:max-w-screen-md md:px-6 
+         lg:max-w-screen-lg lg:px-8 
+         xl:max-w-screen-xl 
+         2xl:max-w-screen-2xl;
+}
+
+.btn-primary {
+  @apply bg-spice-600 hover:bg-spice-700 text-white font-medium px-6 py-3 rounded-md transition-colors;
+}
+
+/* Button component styles with proper white text */
+.button-primary {
+  background-color: var(--color-spice-600);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: var(--color-spice-700);
+}
+
+.section-padding {
+  @apply py-12 md:py-20;
+}
+
+.decorative-heading {
+  @apply relative inline-block;
+}
+
+.decorative-heading::before,
+.decorative-heading::after {
+  content: "•";
+  @apply text-spice-500 mx-2 opacity-80;
+}
+
+.card-middle-eastern {
+  @apply rounded-lg border border-clay-200 bg-white overflow-hidden relative transition-all duration-300 hover:shadow-md;
+}
+
+.card-middle-eastern::before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-spice-500 via-saffron-400 to-spice-500;
+}
+
+/* Ensure spice background buttons have white text */
+.bg-spice-600 {
+  color: white !important;
+}
+
+.bg-spice-700 {
+  color: white !important;
+}
+
+/* Override any conflicting text colors for spice buttons */
+button.bg-spice-600,
+button.bg-spice-700,
+.bg-spice-600:hover,
+.bg-spice-700:hover {
+  color: white !important;
+}
+
+/* Keyframes from old config */
+@keyframes accordion-down {
+  from {
+    height: 0;
   }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground font-sans;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+  to {
+    height: var(--radix-accordion-content-height);
   }
 }
 
-@layer components {
-  .container-custom {
-    @apply container px-4 md:px-6 lg:px-8;
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
   }
-  
-  .btn-primary {
-    @apply bg-spice-600 hover:bg-spice-700 text-white font-medium px-6 py-3 rounded-md transition-colors;
+  to {
+    height: 0;
   }
-  
-  .section-padding {
-    @apply py-12 md:py-20;
-  }
+}
 
-  /* Middle Eastern Style Decorative Elements */
-  .decorative-border {
-    @apply relative;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  
-  .decorative-border::before {
-    content: "";
-    @apply absolute top-0 left-0 w-full h-4 bg-pattern-geometric opacity-20;
+  100% {
+    opacity: 1;
   }
-  
-  .decorative-border::after {
-    content: "";
-    @apply absolute bottom-0 left-0 w-full h-4 bg-pattern-geometric opacity-20;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  .arabic-pattern {
-    @apply relative bg-pattern-arabic bg-repeat opacity-10;
+  50% {
+    transform: translateY(-10px);
   }
-  
-  .decorative-heading {
-    @apply relative inline-block;
-  }
-  
-  .decorative-heading::before,
-  .decorative-heading::after {
-    content: "•";
-    @apply text-spice-500 mx-2 opacity-80;
-  }
-  
-  .card-middle-eastern {
-    @apply rounded-lg border border-clay-200 bg-white overflow-hidden relative transition-all duration-300 hover:shadow-md;
-  }
-  
-  .card-middle-eastern::before {
-    content: "";
-    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-spice-500 via-saffron-400 to-spice-500;
-  }
+}
+
+/* Animation classes */
+.animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Background patterns from old config */
+.bg-pattern {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNTB2NTBIMHoiLz48cGF0aCBkPSJNNTAgMjVjMCAxMy44MDctMTEuMTkzIDI1LTI1IDI1UzAgMzguODA3IDAgMjUgMTEuMTkzIDAgMjUgMHMyNSAxMS4xOTMgMjUgMjV6IiBzdHJva2U9IiNCQUE4OEMiIHN0cm9rZS1vcGFjaXR5PSIuMDUiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMzAgMjVjMCAyLjc2MS0yLjIzOSA1LTUgNXMtNS0yLjIzOS01LTUgMi4yMzktNSA1LTUgNSAyLjIzOSA1IDV6IiBzdHJva2U9IiNCQUE4OEMiIHN0cm9rZS1vcGFjaXR5PSIuMDUiIHN0cm9rZS13aWR0aD0iLjUiLz48L2c+PC9zdmc=');
+}
+
+.bg-pattern-arabic {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNTB2NTBIMHoiLz48cGF0aCBkPSJNMjUgNDNjMS42NTcgMCAzLTEuMzQzIDMtM3MtMS4zNDMtMy0zLTMtMyAxLjM0My0zIDMgMS4zNDMgMyAzIDN6bTAgMmMtMi43NjEgMC01LTIuMjM5LTUtNXMyLjIzOS01IDUtNSA1IDIuMjM5IDUgNS0yLjIzOSA1LTUgNXptMC0yOGMxLjY1NyAwIDMtMS4zNDMgMy0zcy0xLjM0My0zLTMtMy0zIDEuMzQzLTMgMyAxLjM0MyAzIDMgM3ptMCAyYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzktNSA1LTIuMjM5IDUtNSA1em0tMSAxMHYtMTJoMnYxMmgtMnptLTkgOGMxLjY1NyAwIDMtMS4zNDMgMy0zcy0xLjM0My0zLTMtMy0zIDEuMzQzLTMgMyAxLjM0MyAzIDMgM3ptMCAyYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzktNSA1LTIuMjM5IDUtNSA1em0yMC0yYzEuNjU3IDAgMy0xLjM0MyAzLTNzLTEuMzQzLTMtMy0zLTMgMS4zNDMtMyAzIDEuMzQzIDMgMyAzem0wIDJjLTIuNzYxIDAtNS0yLjIzOS01LTVzMi4yMzktNSA1LTUgNSAyLjIzOSA1IDUtMi4yMzktNS01IDV6TTggMjR2LTJoMzR2MkgzNHptLTMgMTBsNi02IDYgNkgzbDYtNnoiIGZpbGw9IiNCQUE4OEMiIGZpbGwtb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc=');
+}
+
+.bg-pattern-geometric {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBMMTUgNTJoMzBMMzAgMzB6TTMwIDMwTDE1IDhsMTUgMjJ6TTMwIDMwbDE1LTIyLTE1IDIyek0zMCAzMGwxNSAyMkgxNWwxNS0yMnoiIHN0cm9rZT0iI0JBQTg4QyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc=');
 }
