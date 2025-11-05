@@ -1,10 +1,8 @@
 export const menuCategories = [
   "Alle",
-  "BBQ Gerechten",
-  "Onze Gerechten",
   "Mezze",
-  "Soepen",
-  "Sandwiches",
-  "Menu Combinaties",
+  "Hoofdgerechten",
   "Dranken",
+  "Warme Dranken",
+  "Desserts",
 ];

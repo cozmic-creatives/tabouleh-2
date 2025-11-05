@@ -2,69 +2,87 @@ import React from "react";
 import { MenuItemType } from "@/components/menu/MenuGrid";
 import { Badge } from "@/components/ui/badge";
 import { processImagePath } from "@/utils/image";
+import { ChefHat, Utensils, Coffee, IceCream, CupSoda } from "lucide-react";
+
 interface MenuItemProps {
   item: MenuItemType;
   hasImageError?: boolean;
   onImageError?: () => void;
 }
 
+// Category-specific fallback icons
+const categoryIconMap = {
+  Mezze: ChefHat,
+  Hoofdgerechten: Utensils,
+  Dranken: CupSoda,
+  "Warme Dranken": Coffee,
+  Desserts: IceCream,
+};
+
+const fallbackIconProps = {
+  className: "w-12 h-12 text-spice-300 opacity-60",
+  strokeWidth: 1.25,
+};
+
+const getCategoryIcon = (category: string) => {
+  const IconComponent =
+    categoryIconMap[category as keyof typeof categoryIconMap] || ChefHat;
+  return <IconComponent {...fallbackIconProps} />;
+};
+
 const MenuItem: React.FC<MenuItemProps> = ({
   item,
   hasImageError = false,
   onImageError = () => {},
 }) => {
-  // Map of food categories to fallback images for items that fail to load
-  const fallbackImages: Record<string, string> = {
-    "BBQ Gerechten":
-      "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Onze Gerechten":
-      "https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    Mezze:
-      "https://images.unsplash.com/photo-1622542086387-907436a6e51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    Soepen:
-      "https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    Sandwiches:
-      "https://images.unsplash.com/photo-1585938389612-a552a28d6914?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Menu Combinaties":
-      "https://images.unsplash.com/photo-1544681280-d257afe2735c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    Dranken:
-      "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-  };
-
   // Format price with Euro sign and proper formatting
   const formattedPrice = `€${item.price.toFixed(2).replace(".", ",")}`;
 
-  // Use either the item's image, or the fallback if we have an error
-  const imageToDisplay = hasImageError
-    ? fallbackImages[item.category] ||
-      "https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    : processImagePath(item.image);
+  // Check if image is missing or has error
+  const hasNoImage = !item.image || hasImageError;
+  const imageToDisplay = processImagePath(item.image);
+
+  // Build schema data conditionally
+  const schemaData: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "MenuItem",
+    name: item.name,
+    offers: {
+      "@type": "Offer",
+      price: item.price,
+      priceCurrency: "EUR",
+    },
+  };
+
+  // Only add description if it exists and is not empty
+  if (item.description && item.description.trim() !== "") {
+    schemaData.description = item.description;
+  }
+
+  // Only add image if it exists
+  if (imageToDisplay) {
+    schemaData.image = processImagePath(imageToDisplay);
+  }
+
   return (
     <div className="flex bg-white rounded-lg shadow-md overflow-hidden border border-spice-300">
       {/* JSON-LD structured data for this menu item */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "MenuItem",
-          name: item.name,
-          description: item.description,
-          offers: {
-            "@type": "Offer",
-            price: item.price,
-            priceCurrency: "EUR",
-          },
-          image: processImagePath(imageToDisplay),
-        })}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
 
-      <div className="w-1/3 aspect-square shrink-0 relative bg-gradient-to-br from-saffron-100 via-spice-100 to-amber-200 overflow-hidden">
-        <img
-          src={imageToDisplay}
-          alt={item.name}
-          loading="lazy"
-          onError={onImageError}
-          className="w-full h-full object-contain aspect-square z-10 relative"
-        />
+      <div className="w-1/3 aspect-square shrink-0 bg-gradient-to-br from-saffron-100 via-spice-100 to-amber-200 overflow-hidden">
+        {hasNoImage ? (
+          <div className="w-full h-full flex items-center justify-center">
+            {getCategoryIcon(item.category)}
+          </div>
+        ) : (
+          <img
+            src={imageToDisplay}
+            alt={item.name}
+            loading="lazy"
+            onError={onImageError}
+            className="w-full h-full object-cover"
+          />
+        )}
       </div>
       <div className="w-2/3 p-4 flex flex-col shrink-0">
         <div className="flex justify-between items-start mb-1 gap-4">
@@ -90,11 +108,23 @@ const MenuItem: React.FC<MenuItemProps> = ({
               {item.serves} personen
             </Badge>
           )}
+          {item.tags &&
+            item.tags.map((tag, index) => (
+              <Badge
+                key={index}
+                variant="outline"
+                className="bg-olive-50 text-olive-800 border-olive-300"
+              >
+                {tag}
+              </Badge>
+            ))}
         </div>
         <div className="grow" />
-        <p className="lg:text-base text-sm text-gray-600 border-t border-spice-300 pt-1 mt-2">
-          {item.description}
-        </p>
+        {item.description && item.description.trim() !== "" && (
+          <p className="lg:text-base text-sm text-gray-600 border-t border-spice-300 pt-1 mt-2">
+            {item.description}
+          </p>
+        )}
       </div>
     </div>
   );

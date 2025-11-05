@@ -39,7 +39,7 @@ const SEO: React.FC<SEOProps> = ({
       latitude: "51.0385",
       longitude: "3.7495",
     },
-    telephone: "+32 49 802 0482",
+    telephone: "+32 466 20 67 78",
     url: "https://tabouleh2.be/",
     image,
     servesCuisine: "Syrisch, Midden-Oosters, Halal",

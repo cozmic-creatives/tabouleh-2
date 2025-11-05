@@ -11,7 +11,7 @@ const Contact = () => {
     "@type": "Restaurant",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+32 49 802 0482",
+      telephone: "+32 466 20 67 78",
       contactType: "customer service",
       availableLanguage: ["Dutch", "English", "Arabic"]
     },
@@ -62,7 +62,7 @@ const Contact = () => {
                           Per Telefoon
                         </h4>
                         <p className="text-gray-600">
-                          Bel ons op +32 49 802 0482 om uw bestelling te
+                          Bel ons op +32 466 20 67 78 om uw bestelling te
                           plaatsen en af te halen.
                         </p>
                       </div>

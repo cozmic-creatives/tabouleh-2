@@ -12,17 +12,17 @@ const AboutSection = () => {
           </div>
           
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Onze Iraakse Roots</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Tabouleh - Betekenis & Verhaal</h2>
             <div className="border-l-4 border-spice-500 pl-6 mb-6">
               <p className="text-lg font-serif italic text-gray-600">
-                "Vanuit de rijke culinaire traditie van Irak brengen wij onze passie voor heerlijk eten naar Ledeberg, Gent."
+                "Tabouleh is niet zomaar een salade, het is een symbool van liefde en aandacht."
               </p>
             </div>
             <p className="text-gray-600 mb-4">
-              Tabouleh 2 is een nieuw restaurant in het hart van Ledeberg, Gent, waar wij, een gepassioneerd team met Iraakse roots, elke dag ons beste doen om authentieke en heerlijke maaltijden te bereiden.
+              Tabouleh betekent een frisse salade vol leven en smaak. Geboren in Libanon, verspreid naar Syrië en Irak, en van daaruit naar de rest van de wereld - met de smaak van het Oosten en de warmte van samenzijn. Ze wordt vaak geserveerd aan iemand die speciaal is, iemand van wie je houdt of om wie je geeft.
             </p>
             <p className="text-gray-600 mb-6">
-              Onze reis begon met de rijke smaken van Irak, en nu willen we de lokale gemeenschap laten genieten van onze authentieke gerechten. Met zorg geselecteerde ingrediënten en traditionele bereidingsmethoden brengen we de smaak van het Midden-Oosten rechtstreeks naar uw bord.
+              Vanuit die betekenis komt de naam van ons restaurant - want alles wat we hier bereiden, doen we met liefde voor de mensen die we waarderen. Als je van iemand houdt, of wilt laten zien dat je om hem of haar geeft, nodig diegene uit bij Tabouleh. Hier wordt elk gerecht met liefde en vreugde gemaakt, met verse ingrediënten die mensen samenbrengen aan tafel - met een glimlach en warmte.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

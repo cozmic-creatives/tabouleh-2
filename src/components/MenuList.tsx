@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { menuCategories } from "@/data/constants";
-import menuItems from "@/data/menuData.json";
+import menuItems from "@/data/menuData2.json";
 import CategoryFilter from "./menu/CategoryFilter";
 import PopularFilter from "./menu/PopularFilter";
 import MenuGrid from "./menu/MenuGrid";
@@ -45,6 +45,7 @@ const MenuList = () => {
           items={filteredItems}
           imageErrors={imageErrors}
           onImageError={handleImageError}
+          showCategoryHeadings={activeCategory === "Alle"}
         />
       </div>
     </div>

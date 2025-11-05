@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroImageTransition from "./HeroImageTransition";
+import { getRestaurantStatus } from "@/utils/restaurantStatus";
 
 const Hero = () => {
   const heroImages = [
@@ -11,6 +12,8 @@ const Hero = () => {
     "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "/images/restaurant-front.jpeg",
   ];
+
+  const restaurantStatus = getRestaurantStatus();
 
   return (
     <div className="relative bg-clay-50 overflow-hidden decorative-border">
@@ -30,14 +33,44 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-              <span className="block">Authentieke</span>
-              <span className="text-spice-600">Midden-Oosten Keuken</span>
+              <span className="block">Gerechten Bereid</span>
+              <span className="text-spice-600">Met Liefde en Aandacht</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 mx-auto lg:mx-0">
-              Ontdek de rijke smaken van de Midden-Oosterse keuken: Syrische
-              specialiteiten, verfijnde Libanese gerechten, authentieke Iraakse
-              recepten - een culinaire reis door het hart van het Midden-Oosten.
+            <p className="text-lg md:text-xl text-gray-600 mb-6 mx-auto lg:mx-0">
+              Van Libanon naar Syrië, van Irak naar Gent - Tabouleh brengt de
+              warmte van samenzijn en de smaak van het Oosten naar jouw tafel.
+              Elk gerecht is een uitnodiging om te genieten met de mensen die je
+              waardeert.
             </p>
+
+            {/* Open/Closed Indicator */}
+            <div className="flex flex-wrap items-center gap-3 mb-8 justify-center lg:justify-start">
+              <div className="flex items-center gap-2">
+                <div
+                  className={`w-2.5 h-2.5 rounded-full ${
+                    restaurantStatus.isOpen
+                      ? "bg-green-500 animate-pulse"
+                      : "bg-red-500"
+                  }`}
+                ></div>
+                <span
+                  className={`text-sm font-semibold ${
+                    restaurantStatus.isOpen ? "text-green-700" : "text-red-700"
+                  }`}
+                >
+                  {restaurantStatus.message}
+                </span>
+              </div>
+              {restaurantStatus.nextOpen && (
+                <>
+                  <span className="text-sm text-gray-400">•</span>
+                  <span className="text-sm text-gray-600">
+                    {restaurantStatus.nextOpen}
+                  </span>
+                </>
+              )}
+            </div>
+
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button
                 asChild
