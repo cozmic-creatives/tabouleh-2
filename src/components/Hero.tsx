@@ -23,7 +23,7 @@ const Hero = () => {
         aria-hidden="true"
       ></div>
 
-      <div className="container-custom mx-auto relative">
+      <div className="container mx-auto relative">
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20 lg:py-20 gap-12 lg:gap-16">
           {/* Left content column */}
           <div className="w-full lg:w-1/2 text-center lg:text-left pb-8 lg:pb-0">

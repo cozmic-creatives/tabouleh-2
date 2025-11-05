@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ChefHat, Utensils, Coffee, IceCream, CupSoda } from "lucide-react";
+import { ChefHat, Utensils, Coffee, IceCream, CupSoda, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface DishCardProps {
   id: number;
@@ -72,27 +73,16 @@ const DishCard: React.FC<DishCardProps> = ({
         <div className="grow"></div>
 
         <div className="pt-2">
-          <Link
-            to="/menu"
-            className="text-spice-600 hover:text-spice-700 font-medium inline-flex items-center"
+          <Button 
+            asChild 
+            variant="ghost" 
+            className="text-spice-600 hover:text-spice-700 hover:bg-spice-50 p-0 h-auto font-medium"
           >
-            Nu bestellen
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="ml-1"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </Link>
+            <Link to="/menu">
+              Nu bestellen
+              <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </Button>
         </div>
       </div>
     </div>

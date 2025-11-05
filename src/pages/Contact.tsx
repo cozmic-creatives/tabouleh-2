@@ -28,7 +28,7 @@ const Contact = () => {
       <Navbar />
       <main className="flex-grow">
         <section className="bg-clay-50 py-12">
-          <div className="container-custom mx-auto text-center">
+          <div className="container mx-auto text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               Contact & Bestellen
             </h1>
@@ -40,7 +40,7 @@ const Contact = () => {
         </section>
 
         <section className="py-12">
-          <div className="container-custom mx-auto">
+          <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
@@ -202,7 +202,7 @@ const Contact = () => {
         </section>
 
         <section className="py-8 bg-clay-50">
-          <div className="container-custom mx-auto text-center">
+          <div className="container mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Bezoek Ons
             </h2>

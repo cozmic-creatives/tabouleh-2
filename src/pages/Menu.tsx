@@ -6,6 +6,7 @@ import { Clock, MapPin, CheckCircle2, Phone } from "lucide-react";
 import SEO from "@/components/SEO";
 import { getRestaurantStatus } from "@/utils/restaurantStatus";
 import OrderButton from "@/components/OrderButton";
+import { Button } from "@/components/ui/button";
 import OrderingOptionCard from "@/components/menu/OrderingOptionCard";
 import {
   orderingOptions,
@@ -61,7 +62,7 @@ const Menu = () => {
       <Navbar />
       <main className="grow">
         <section className="bg-clay-50 py-12">
-          <div className="container-custom mx-auto text-center">
+          <div className="container mx-auto text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Ons Menu</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Ontdek onze authentieke Midden-Oost gerechten, gemaakt met
@@ -76,7 +77,7 @@ const Menu = () => {
         </section>
 
         <section className="py-12 bg-spice-50 border-t border-spice-200">
-          <div className="container-custom mx-auto">
+          <div className="container mx-auto">
             {/* Header */}
             <div className="text-center max-w-3xl mx-auto mb-10">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
@@ -186,14 +187,18 @@ const Menu = () => {
                   Bel ons of kom langs voor de lekkerste Syrische gerechten!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                  <a
-                    href="tel:+32466206778"
-                    className="inline-flex items-center gap-2 bg-white text-spice-600 hover:bg-gray-50 px-6 py-3 rounded-lg font-semibold transition-colors"
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-white text-spice-600 hover:bg-gray-50"
                   >
-                    <Phone className="w-5 h-5" />
-                    <span>+32 466 20 67 78</span>
-                  </a>
+                    <a href="tel:+32466206778">
+                      <Phone className="w-5 h-5" />
+                      <span>+32 466 20 67 78</span>
+                    </a>
+                  </Button>
                   <OrderButton
+                    size="lg"
                     className="bg-white/10 hover:bg-white/20 text-white border-2 border-white"
                     text="Bestel Nu"
                   />

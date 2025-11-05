@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-clay-200">
-      <div className="container-custom mx-auto flex items-center justify-between h-16">
+      <div className="container mx-auto flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
           <TaboulehLogo className="h-6 w-auto text-olive-600" />
           <div className="flex items-center">

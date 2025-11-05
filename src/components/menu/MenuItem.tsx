@@ -65,11 +65,11 @@ const MenuItem: React.FC<MenuItemProps> = ({
   }
 
   return (
-    <div className="flex bg-white rounded-lg shadow-md overflow-hidden border border-spice-300">
+    <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden border border-spice-300">
       {/* JSON-LD structured data for this menu item */}
       <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
 
-      <div className="w-1/3 aspect-square shrink-0 bg-gradient-to-br from-saffron-100 via-spice-100 to-amber-200 overflow-hidden">
+      <div className="w-full md:w-1/3 aspect-[4/3] md:aspect-square shrink-0 bg-gradient-to-br from-saffron-100 via-spice-100 to-amber-200 overflow-hidden">
         {hasNoImage ? (
           <div className="w-full h-full flex items-center justify-center">
             {getCategoryIcon(item.category)}
@@ -84,10 +84,10 @@ const MenuItem: React.FC<MenuItemProps> = ({
           />
         )}
       </div>
-      <div className="w-2/3 p-4 flex flex-col shrink-0">
-        <div className="flex justify-between items-start mb-1 gap-4">
+      <div className="w-full md:w-2/3 p-4 flex flex-col shrink-0">
+        <div className="flex justify-between items-center mb-1 gap-4">
           <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
-          <span className="text-spice-600 font-bold border-spice-600">
+          <span className="text-spice-600 font-bold border-spice-600 whitespace-nowrap">
             {formattedPrice}
           </span>
         </div>
