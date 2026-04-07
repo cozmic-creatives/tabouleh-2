@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -21,20 +21,20 @@ export default defineConfig(({ mode }) => ({
   build: {
     // Enable tree shaking for production builds
     target: 'esnext',
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks: {
-          // Separate vendor dependencies into their own chunks
-          'react-vendor': ['react', 'react-dom'],
-          'router': ['react-router-dom'],
-          'ui-vendor': ['@radix-ui/react-slot', '@radix-ui/react-tabs', '@radix-ui/react-dialog'],
-          'icons': ['lucide-react'],
-          'query': ['@tanstack/react-query'],
+        codeSplitting: {
+          groups: [
+            { name: 'react-vendor', test: /node_modules[\\/](react-dom|react)[\\/]/, priority: 20 },
+            { name: 'router', test: /node_modules[\\/]react-router-dom/, priority: 15 },
+            { name: 'ui-vendor', test: /node_modules[\\/]@radix-ui/, priority: 15 },
+            { name: 'icons', test: /node_modules[\\/]lucide-react/, priority: 10 },
+            { name: 'query', test: /node_modules[\\/]@tanstack[\\/]react-query/, priority: 10 },
+          ],
         },
       },
     },
-    // Enable minification and compression
-    minify: 'esbuild',
+    minify: 'oxc',
     cssMinify: true,
     // Remove unused code
     reportCompressedSize: true,
@@ -48,6 +48,5 @@ export default defineConfig(({ mode }) => ({
       '@tanstack/react-query',
       'lucide-react',
     ],
-    exclude: ['@vite/client', '@vite/env'],
   },
 }));

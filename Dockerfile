@@ -1,6 +1,6 @@
 # Multi-stage Dockerfile for production deployment
 # Stage 1: Build the application
-FROM node:alpine AS builder
+FROM node:22-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -18,7 +18,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Production server  
-FROM node:alpine
+FROM node:22-alpine
 
 # Install serve (simple static file server with SPA support)
 RUN npm install -g serve
