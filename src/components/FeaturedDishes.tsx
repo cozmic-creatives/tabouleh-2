@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import menuData from "../data/menuData2.json";
+import menuData from "../data/menuData3.json";
 import { processImagePath } from "@/utils/image";
 import DishCard from "./DishCard";
 import { Button } from "@/components/ui/button";

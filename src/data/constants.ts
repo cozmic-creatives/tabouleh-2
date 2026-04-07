@@ -1,8 +1,8 @@
 export const menuCategories = [
   "Alle",
+  "BBQ",
+  "Shoarma",
   "Mezze",
-  "Hoofdgerechten",
+  "Snacks",
   "Dranken",
-  "Warme Dranken",
-  "Desserts",
 ];

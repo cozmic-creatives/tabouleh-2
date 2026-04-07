@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ChefHat, Utensils, Coffee, IceCream, CupSoda, ArrowRight } from "lucide-react";
+import { ChefHat, Utensils, Flame, CupSoda, UtensilsCrossed, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface DishCardProps {
@@ -14,11 +14,11 @@ interface DishCardProps {
 
 // Category-specific fallback icons
 const categoryIconMap = {
+  BBQ: Flame,
+  Shoarma: UtensilsCrossed,
   Mezze: ChefHat,
-  Hoofdgerechten: Utensils,
+  Snacks: Utensils,
   Dranken: CupSoda,
-  "Warme Dranken": Coffee,
-  Desserts: IceCream,
 };
 
 const fallbackIconProps = {

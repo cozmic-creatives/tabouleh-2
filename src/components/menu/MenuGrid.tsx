@@ -1,6 +1,6 @@
 import React from "react";
 import MenuItem from "./MenuItem";
-import { Utensils, Coffee, IceCream, ChefHat, CupSoda } from "lucide-react";
+import { Utensils, Flame, UtensilsCrossed, ChefHat, CupSoda } from "lucide-react";
 
 // Define the MenuItem type locally or move to a shared types file
 export interface MenuItemType {
@@ -23,19 +23,19 @@ interface MenuGridProps {
 }
 
 const categoryIcons: Record<string, React.ReactNode> = {
+  BBQ: <Flame className="w-6 h-6" />,
+  Shoarma: <UtensilsCrossed className="w-6 h-6" />,
   Mezze: <ChefHat className="w-6 h-6" />,
-  Hoofdgerechten: <Utensils className="w-6 h-6" />,
+  Snacks: <Utensils className="w-6 h-6" />,
   Dranken: <CupSoda className="w-6 h-6" />,
-  "Warme Dranken": <Coffee className="w-6 h-6" />,
-  Desserts: <IceCream className="w-6 h-6" />,
 };
 
 const categoryDescriptions: Record<string, string> = {
+  BBQ: "Onze grill specialiteiten met salade en mezze",
+  Shoarma: "Shoarma gerechten met huisbereide sauzen",
   Mezze: "Traditionele voorgerechten en kleine hapjes",
-  Hoofdgerechten: "Onze grill specialiteiten en hoofdschotels",
-  Dranken: "Verse smoothies, frisdranken en verfrissende dranken",
-  "Warme Dranken": "Koffie, thee en warme specialiteiten",
-  Desserts: "Zoete lekkernijen om uw maaltijd af te sluiten",
+  Snacks: "Snacks en frietjes",
+  Dranken: "Frisdranken en verfrissende dranken",
 };
 
 const MenuGrid: React.FC<MenuGridProps> = ({
@@ -58,11 +58,11 @@ const MenuGrid: React.FC<MenuGridProps> = ({
   if (showCategoryHeadings) {
     const groupedItems: Record<string, MenuItemType[]> = {};
     const categoryOrder = [
+      "BBQ",
+      "Shoarma",
       "Mezze",
-      "Hoofdgerechten",
+      "Snacks",
       "Dranken",
-      "Warme Dranken",
-      "Desserts",
     ];
 
     items.forEach((item) => {

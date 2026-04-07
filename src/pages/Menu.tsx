@@ -24,29 +24,28 @@ const Menu = () => {
       hasMenuSection: [
         {
           "@type": "MenuSection",
+          name: "BBQ",
+          description: "Grill specialiteiten met salade en mezze",
+        },
+        {
+          "@type": "MenuSection",
+          name: "Shoarma",
+          description: "Shoarma gerechten met huisbereide sauzen",
+        },
+        {
+          "@type": "MenuSection",
           name: "Mezze",
           description: "Traditionele Syrische voorgerechten en kleine hapjes",
         },
         {
           "@type": "MenuSection",
-          name: "Hoofdgerechten",
-          description:
-            "Syrische hoofdgerechten, grill specialiteiten en shoarma",
+          name: "Snacks",
+          description: "Snacks en frietjes",
         },
         {
           "@type": "MenuSection",
           name: "Dranken",
-          description: "Verse smoothies, frisdranken en verfrissende dranken",
-        },
-        {
-          "@type": "MenuSection",
-          name: "Warme Dranken",
-          description: "Koffie, thee en warme specialiteiten",
-        },
-        {
-          "@type": "MenuSection",
-          name: "Desserts",
-          description: "Zoete Syrische desserts",
+          description: "Frisdranken en verfrissende dranken",
         },
       ],
     },
@@ -55,7 +54,7 @@ const Menu = () => {
     <div className="min-h-screen flex flex-col">
       <SEO
         title="Ons Menu - Syrische Gerechten en Specialiteiten"
-        description="Ontdek onze authentieke Syrische gerechten, gemaakt met traditionele recepten en de verste ingrediënten. Van voorgerechten tot desserts, ons menu biedt voor ieder wat wils."
+        description="Ontdek onze authentieke Syrische gerechten, gemaakt met traditionele recepten en de verste ingrediënten. Van mezze tot grill specialiteiten, ons menu biedt voor ieder wat wils."
         type="website"
         schemaMarkup={menuSchema}
       />

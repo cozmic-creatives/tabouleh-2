@@ -2,7 +2,7 @@ import React from "react";
 import { MenuItemType } from "@/components/menu/MenuGrid";
 import { Badge } from "@/components/ui/badge";
 import { processImagePath } from "@/utils/image";
-import { ChefHat, Utensils, Coffee, IceCream, CupSoda } from "lucide-react";
+import { ChefHat, Utensils, Flame, CupSoda, UtensilsCrossed } from "lucide-react";
 
 interface MenuItemProps {
   item: MenuItemType;
@@ -12,11 +12,11 @@ interface MenuItemProps {
 
 // Category-specific fallback icons
 const categoryIconMap = {
+  BBQ: Flame,
+  Shoarma: UtensilsCrossed,
   Mezze: ChefHat,
-  Hoofdgerechten: Utensils,
+  Snacks: Utensils,
   Dranken: CupSoda,
-  "Warme Dranken": Coffee,
-  Desserts: IceCream,
 };
 
 const fallbackIconProps = {

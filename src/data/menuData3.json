@@ -1,0 +1,504 @@
+[
+  {
+    "id": 1,
+    "name": "Mix Grill",
+    "description": "Gehakt, kipfilet en lamsbrochette, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 20.0,
+    "category": "BBQ",
+    "popular": true,
+    "image": "/images/menu3/mix-grill-met-fattoush.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 2,
+    "name": "Menu Kebab en Lam",
+    "description": "Gehakt en lamsbrochette, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/mix-grill-lams-kufta.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 3,
+    "name": "Menu Kebab en Kip",
+    "description": "Gehakt en kipfilet, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/mix-grill-kufta-drie-dips.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 4,
+    "name": "Menu Lamsbrochette",
+    "description": "Lamsbrochette, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 20.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/mix-grill-bulgur-saffraanrijst.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 5,
+    "name": "Menu Kebab",
+    "description": "Gehakt, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/mix-grill-rijst.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 6,
+    "name": "Menu Shish Tawook",
+    "description": "Kipfilet, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/shish-taouk-met-rijst-en-mezze.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 7,
+    "name": "Menu Kippenvleugels",
+    "description": "8 kippenvleugels, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/kippenvleugels-schotel.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 8,
+    "name": "Menu Halve Kip",
+    "description": "Halve kip, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/halve-kip-schotel.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 9,
+    "name": "Menu Lamskotelet",
+    "description": "3 lamskoteletten, een salade en mezze. Keuze uit bulgur of rijst",
+    "price": 22.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 10,
+    "name": "Menu Kalffilet",
+    "description": "Gegrilde kalffilet met champignonsaus, geserveerd met frietjes, bulgur of rijst en salade",
+    "price": 20.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 11,
+    "name": "Menu Zalm",
+    "description": "Zalm geserveerd met frietjes, bulgur of rijst en salade",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 12,
+    "name": "Qozi",
+    "description": "Traditioneel gerecht van langzaam gegaard, kruidig lamsvlees op een bed van geurige rijst met bijgerecht naar keuze",
+    "price": 18.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/qozi-lamsbout-tajine.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 13,
+    "name": "1KG Mix Grill",
+    "description": "Gehakt, kipfilet, kippenvleugels, lamsbrochette met Libanees brood, salade en klein portie mezze. Extra: rijst, bulgur of friet +€5",
+    "price": 60.0,
+    "category": "BBQ",
+    "popular": true,
+    "image": "/images/menu3/mix-grill-met-mezze-en-arayes.jpeg",
+    "serves": "4-5",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 14,
+    "name": "Menu Tabouleh",
+    "description": "Gehakt, kipfilet, kippenvleugels, lamsbrochette met Libanees brood, frietjes, baba ganoush, hummus, mutabel en fattoush",
+    "price": 80.0,
+    "category": "BBQ",
+    "popular": true,
+    "image": "",
+    "serves": "4-5",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 15,
+    "name": "Menu Vegetarisch",
+    "description": "Baba ganoush, mutabal, hummus, falafel, rijst, fattoush, warak einab en aubergine in tomatensaus",
+    "price": 15.0,
+    "category": "BBQ",
+    "popular": false,
+    "image": "/images/menu3/vegetarische-mezze-schotel.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 16,
+    "name": "Shoarma Arabi",
+    "description": "Shoarma met kip en Libanees brood, huisbereide saus, granaatappelsaus, frietjes en salade",
+    "price": 18.0,
+    "category": "Shoarma",
+    "popular": true,
+    "image": "/images/menu3/shoarma-wraps-ovaal.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 17,
+    "name": "Schotel Shoarma",
+    "description": "Shoarma met kip, huisbereide saus, granaatappelsaus, frietjes en salade",
+    "price": 16.0,
+    "category": "Shoarma",
+    "popular": false,
+    "image": "/images/menu3/shoarma-fotocollage.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 18,
+    "name": "Durum Shoarma",
+    "description": "Shoarma met Libanees brood, huisbereide looksaus en granaatappelsaus",
+    "price": 10.0,
+    "category": "Shoarma",
+    "popular": false,
+    "image": "/images/menu3/shoarma-wraps-rond.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 19,
+    "name": "Hummus bi Lahme",
+    "description": "Hummus met gehakt",
+    "price": 10.0,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/hummus-bi-lahme.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 20,
+    "name": "Hummus",
+    "description": "Smeuïge dip van kikkererwten, tahin, citroensap en olijfolie",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 21,
+    "name": "Baba Ganoush",
+    "description": "Huisbereide spread van gegrilde aubergine en paprika, met peterselie, munt, kruiden, granaatappelsaus en olijfolie",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 22,
+    "name": "Mutabal",
+    "description": "Rokerige aubergine van de barbecue, gemengd met tahin, yoghurt, knoflook, citroen en olijfolie",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/mutabal.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 23,
+    "name": "Fattoush",
+    "description": "Frisse salade van verse tomaten, komkommer en knapperig brood met granaatappelsaus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/fattoush.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 24,
+    "name": "Warak Einab",
+    "description": "Wijnbladeren gevuld met rijst, citroen en kruiden, gestoofd in granaatappelsaus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/warak-enab-op-schotel.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 25,
+    "name": "Kibbeh",
+    "description": "Krokante kibbeh van gehakt, bulgur en aromatische kruiden",
+    "price": 8.0,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/kibbeh.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 26,
+    "name": "Falafel",
+    "description": "Knapperige balletjes van gemalen kikkererwten en verse kruiden met hummus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/falafel-met-hummus.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 27,
+    "name": "Burak",
+    "description": "Krokant bladerdeeg gevuld met kaas of spinazie",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/burak-sigara-boregi.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 28,
+    "name": "Batata Harra",
+    "description": "Geroosterde aardappelen met knoflook, pikante paprika en aromatische kruiden",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/mezze-warak-enab-batata-harra.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 29,
+    "name": "Makali",
+    "description": "Knapperig gebakken bloemkool met huisbereide saus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/gebakken-bloemkool.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 30,
+    "name": "Makali Aubergine",
+    "description": "Gebakken aubergine met huisbereide saus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/makali-aubergine.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 31,
+    "name": "Bulgur in Tomatensaus",
+    "description": "Kruidige bulgur gestoofd in rijke tomatensaus met ui, paprika en verse kruiden",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/bulgur-tomatensaus.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 32,
+    "name": "Bulgur met Citroen",
+    "description": "Bulgur op smaak gebracht met verse citroen en kruiden",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/bulgur-met-citroen.jpeg",
+    "_priceSource": "estimated"
+  },
+  {
+    "id": 33,
+    "name": "Witte Rijst",
+    "description": "Licht gekruide, luchtige witte rijst",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/witte-rijst.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 34,
+    "name": "Witte Bonen in Tomatensaus",
+    "description": "Witte bonen gestoofd in rijke tomatensaus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/witte-bonen-tomatensaus.jpeg",
+    "_priceSource": "estimated"
+  },
+  {
+    "id": 35,
+    "name": "Arayes",
+    "description": "Libanees brood gevuld met gekruid gehakt, gegrild en geserveerd met hummus",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/arayes-met-hummus.jpeg",
+    "_priceSource": "estimated"
+  },
+  {
+    "id": 36,
+    "name": "Kaasrolletjes",
+    "description": "Krokante kaasrolletjes geserveerd met yoghurtdip",
+    "price": 7.5,
+    "category": "Mezze",
+    "popular": false,
+    "image": "/images/menu3/kaasrolletjes-yoghurtdip.jpeg",
+    "_priceSource": "estimated"
+  },
+  {
+    "id": 37,
+    "name": "Chickennuggets",
+    "description": "6 krokante chicken nuggets, geserveerd met frietjes en een frisse salade",
+    "price": 10.0,
+    "category": "Snacks",
+    "popular": false,
+    "image": "/images/menu3/kipnuggets-met-friet.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 38,
+    "name": "Hamburger",
+    "description": "Gegrilde burger met verse toppings, geserveerd met frietjes en een saus naar keuze",
+    "price": 10.0,
+    "category": "Snacks",
+    "popular": false,
+    "image": "/images/menu3/burger-met-friet.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 39,
+    "name": "Portie Frietjes",
+    "description": "Portie frietjes, geserveerd met een saus naar keuze",
+    "price": 7.0,
+    "category": "Snacks",
+    "popular": false,
+    "image": "/images/menu3/friet-drie-sauzen.jpeg",
+    "_priceSource": "confirmed"
+  },
+  {
+    "id": 40,
+    "name": "Coca Cola",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/coca-cola.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 41,
+    "name": "Coca Cola Zero",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/coca-cola-zero.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 42,
+    "name": "Pepsi",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/pepsi.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 43,
+    "name": "Fanta Oranje",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/fanta-oranje.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 44,
+    "name": "Fanta Exotic",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/fanta-exotic.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 45,
+    "name": "Sprite",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/sprite.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 46,
+    "name": "Lipton Peach Ice Tea",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/lipton-peach-ice-tea.jpeg",
+    "_priceSource": "estimated"
+  },
+  {
+    "id": 47,
+    "name": "Lipton Sparkling Ice Tea",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/lipton-sparkling-ice-tea.jpeg",
+    "_priceSource": "estimated"
+  },
+  {
+    "id": 48,
+    "name": "Ayran",
+    "description": "",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/lydia-ayran.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 49,
+    "name": "Barbican Appel",
+    "description": "",
+    "price": 3.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/barbican-appel.jpeg",
+    "_priceSource": "menu2"
+  },
+  {
+    "id": 50,
+    "name": "Spa Intense",
+    "description": "Bruisend water",
+    "price": 2.5,
+    "category": "Dranken",
+    "popular": false,
+    "image": "/images/menu3/spa-intense-bruisend.jpeg",
+    "_priceSource": "estimated"
+  }
+]
